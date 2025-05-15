@@ -44,21 +44,21 @@ export default function Government() {
   };
 
   return (
-    <section id="government" className="py-20 min-h-screen flex items-center relative bg-blue-50">
-      <div className="absolute top-0 left-0 rounded-full w-64 h-64 bg-blue-100 opacity-50"></div>
+    <section id="government" className="py-16 min-h-screen flex items-center relative bg-blue-50">
+      <div className="absolute top-0 left-0 rounded-full w-48 h-48 bg-blue-100 opacity-50"></div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 z-10">
         <motion.div 
-          className="text-center max-w-3xl mx-auto mb-16 reveal opacity-0 translate-y-8"
+          className="text-center max-w-2xl mx-auto mb-12 reveal opacity-0 translate-y-8"
           variants={fadeIn}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
         >
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold mb-6">
-            <Briefcase className="inline-block mr-3 h-10 w-10 text-policy" />
+          <h2 className="font-playfair text-3xl md:text-4xl font-bold mb-4">
+            <Briefcase className="inline-block mr-3 h-8 w-8 text-policy" />
             Government Work
           </h2>
-          <p className="text-gray-600">Creating meaningful change through policy and public service</p>
+          <p className="text-gray-600 text-sm">Creating meaningful change through policy and public service</p>
         </motion.div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
@@ -71,18 +71,18 @@ export default function Government() {
             viewport={{ once: true, amount: 0.1 }}
           >
             <div className="flex items-center mb-8">
-              <div className="bg-policy bg-opacity-20 rounded-full w-10 h-10 flex items-center justify-center mr-4">
-                <div className="bg-policy rounded-full w-3 h-3"></div>
+              <div className="bg-policy bg-opacity-20 rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                <div className="bg-policy rounded-full w-2 h-2"></div>
               </div>
-              <h3 className="font-playfair text-2xl font-bold">Policy Analyst</h3>
+              <h3 className="font-playfair text-xl font-bold">Policy Analyst</h3>
             </div>
             
-            <div className="ml-14 mb-6">
-              <p className="text-policy font-montserrat font-semibold">Department of State • 2022 - Present</p>
+            <div className="ml-11 mb-4">
+              <p className="text-policy font-montserrat font-semibold text-sm">Department of State • 2022 - Present</p>
             </div>
             
             <motion.div 
-              className="ml-14 space-y-8"
+              className="ml-11 space-y-6"
               variants={timelineContainer}
               initial="hidden"
               whileInView="visible"
@@ -108,18 +108,18 @@ export default function Government() {
             </motion.div>
 
             <div className="flex items-center mt-12 mb-8">
-              <div className="bg-policy bg-opacity-20 rounded-full w-10 h-10 flex items-center justify-center mr-4">
-                <div className="bg-policy rounded-full w-3 h-3"></div>
+              <div className="bg-policy bg-opacity-20 rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                <div className="bg-policy rounded-full w-2 h-2"></div>
               </div>
-              <h3 className="font-playfair text-2xl font-bold">Legislative Assistant</h3>
+              <h3 className="font-playfair text-xl font-bold">Legislative Assistant</h3>
             </div>
             
-            <div className="ml-14 mb-6">
-              <p className="text-policy font-montserrat font-semibold">U.S. Senate • 2020 - 2022</p>
+            <div className="ml-11 mb-4">
+              <p className="text-policy font-montserrat font-semibold text-sm">U.S. Senate • 2020 - 2022</p>
             </div>
             
             <motion.div 
-              className="ml-14 space-y-8"
+              className="ml-11 space-y-6"
               variants={timelineContainer}
               initial="hidden"
               whileInView="visible"
@@ -191,13 +191,13 @@ export default function Government() {
             </motion.div>
             
             <motion.div 
-              className="mt-12 bg-white p-8 rounded-xl shadow-lg"
+              className="mt-8 bg-white p-6 rounded-xl shadow-lg"
               variants={fadeIn}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.1 }}
             >
-              <h3 className="font-playfair text-2xl font-bold mb-4">Key Policy Initiatives</h3>
+              <h3 className="font-playfair text-xl font-bold mb-3">Key Policy Initiatives</h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <div className="bg-policy bg-opacity-20 rounded-full p-1 mr-3 mt-1">
