@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600&family=Montserrat:wght@400;600;700&display=swap');
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 20 14.3% 4.1%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 20 14.3% 4.1%;
+  --card: 0 0% 100%;
+  --card-foreground: 20 14.3% 4.1%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  --primary: 354 77% 47%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 60 4.8% 95.9%;
+  --secondary-foreground: 24 9.8% 10%;
+  --accent: 60 4.8% 95.9%;
+  --accent-foreground: 24 9.8% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --ring: 20 14.3% 4.1%;
+  --radius: 0.5rem;
+  
+  /* Custom colors */
+  --harvard: 354 77% 47%;
+  --policy: 220 17% 35%;
+  --consulting: 175 48% 45%;
+  --dark: 218 23% 23%;
+  --light: 220 30% 96%;
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --primary: 354 77% 47%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 4.9% 83.9%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-light text-dark;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair;
+  }
+}
+
+@layer components {
+  .font-playfair {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .text-harvard {
+    color: hsl(354, 77%, 47%);
+  }
+
+  .bg-harvard {
+    background-color: hsl(354, 77%, 47%);
+  }
+
+  .text-policy {
+    color: hsl(220, 17%, 35%);
+  }
+
+  .bg-policy {
+    background-color: hsl(220, 17%, 35%);
+  }
+
+  .text-consulting {
+    color: hsl(175, 48%, 45%);
+  }
+
+  .bg-consulting {
+    background-color: hsl(175, 48%, 45%);
+  }
+
+  .text-dark {
+    color: hsl(218, 23%, 23%);
+  }
+
+  .bg-dark {
+    background-color: hsl(218, 23%, 23%);
+  }
+
+  .text-light {
+    color: hsl(220, 30%, 96%);
+  }
+
+  .bg-light {
+    background-color: hsl(220, 30%, 96%);
+  }
+  
+  .border-harvard {
+    border-color: hsl(354, 77%, 47%);
+  }
+  
+  .border-policy {
+    border-color: hsl(220, 17%, 35%);
+  }
+  
+  .border-consulting {
+    border-color: hsl(175, 48%, 45%);
+  }
+
+  .progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background-color: hsl(354, 77%, 47%);
+    z-index: 50;
+    transition: width 0.3s ease;
+  }
+  
+  .path-card {
+    @apply bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 h-full;
+  }
+  
+  .path-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+  
+  .scroll-indicator {
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-20px);}
+    60% {transform: translateY(-10px);}
+  }
+  
+  .path-highlight {
+    transition: all 0.3s ease;
+  }
+  
+  .path-highlight:hover .path-icon {
+    transform: translateY(-5px);
+  }
+  
+  .timeline-item {
+    @apply relative pl-6 mb-6;
+  }
+  
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: hsl(354, 77%, 47%);
+    left: -8px;
+    top: 12px;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
