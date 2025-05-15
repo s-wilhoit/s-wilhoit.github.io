@@ -1,21 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600&family=Montserrat:wght@400;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600&family=Montserrat:wght@400;600;700&display=swap');
-
 :root {
   --background: 0 0% 100%;
-  --foreground: 20 14.3% 4.1%;
+  --foreground: 220 10% 40%;
   --muted: 60 4.8% 95.9%;
   --muted-foreground: 25 5.3% 44.7%;
   --popover: 0 0% 100%;
-  --popover-foreground: 20 14.3% 4.1%;
+  --popover-foreground: 220 10% 40%;
   --card: 0 0% 100%;
-  --card-foreground: 20 14.3% 4.1%;
+  --card-foreground: 220 10% 40%;
   --border: 20 5.9% 90%;
   --input: 20 5.9% 90%;
-  --primary: 354 77% 47%;
+  --primary: 354 70% 78%;
   --primary-foreground: 0 0% 100%;
   --secondary: 60 4.8% 95.9%;
   --secondary-foreground: 24 9.8% 10%;
@@ -23,29 +23,29 @@
   --accent-foreground: 24 9.8% 10%;
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 60 9.1% 97.8%;
-  --ring: 20 14.3% 4.1%;
+  --ring: 220 10% 40%;
   --radius: 0.5rem;
   
-  /* Custom colors */
-  --harvard: 354 77% 47%;
-  --policy: 220 17% 35%;
-  --consulting: 175 48% 45%;
-  --dark: 218 23% 23%;
+  /* Custom colors (pastel) */
+  --harvard: 354 70% 78%;
+  --policy: 220 40% 70%;
+  --consulting: 175 48% 75%;
+  --dark: 218 25% 45%;
   --light: 220 30% 96%;
 }
 
 .dark {
-  --background: 240 10% 3.9%;
+  --background: 240 10% 12%;
   --foreground: 0 0% 98%;
   --muted: 240 3.7% 15.9%;
   --muted-foreground: 240 5% 64.9%;
-  --popover: 240 10% 3.9%;
+  --popover: 240 10% 12%;
   --popover-foreground: 0 0% 98%;
-  --card: 240 10% 3.9%;
+  --card: 240 10% 12%;
   --card-foreground: 0 0% 98%;
   --border: 240 3.7% 15.9%;
   --input: 240 3.7% 15.9%;
-  --primary: 354 77% 47%;
+  --primary: 354 70% 78%;
   --primary-foreground: 0 0% 100%;
   --secondary: 240 3.7% 15.9%;
   --secondary-foreground: 0 0% 98%;
@@ -54,6 +54,13 @@
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 0 0% 98%;
   --ring: 240 4.9% 83.9%;
+  
+  /* Custom colors (pastel) */
+  --harvard: 354 70% 78%;
+  --policy: 220 40% 70%;
+  --consulting: 175 48% 75%;
+  --dark: 218 25% 45%;
+  --light: 220 30% 96%;
 }
 
 @layer base {
