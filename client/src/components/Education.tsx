@@ -49,7 +49,7 @@ export default function Education() {
 
   return (
     <section id="education" className="py-20 min-h-screen flex items-center relative">
-      <div className="absolute top-0 right-0 w-1/3 h-full bg-harvard bg-opacity-5"></div>
+      <div className="absolute top-0 right-0 w-1/3 h-full bg-pink-100"></div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Education image */}

@@ -59,7 +59,7 @@ export default function Government() {
   };
 
   return (
-    <section id="government" className="py-20 min-h-screen flex items-center relative bg-policy bg-opacity-5">
+    <section id="government" className="py-20 min-h-screen flex items-center relative bg-blue-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           className="text-center max-w-3xl mx-auto mb-16 reveal opacity-0 translate-y-8"
