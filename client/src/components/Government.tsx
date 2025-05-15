@@ -131,10 +131,10 @@ export default function Government() {
                 whileHover={{ y: -5 }}
                 transition={{ duration: 0.2 }}
               >
-                <div className="absolute -left-10 top-1/2 transform -translate-y-1/2 h-0.5 w-6 bg-policy"></div>
+                <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 h-0.5 w-5 bg-policy"></div>
                 <div className="flex mb-2">
                   <div className="text-policy">
-                    <UserCheck className="h-5 w-5" />
+                    <UserCheck className="h-4 w-4" />
                   </div>
                 </div>
                 <p className="text-gray-700 text-sm">
@@ -177,10 +177,10 @@ export default function Government() {
                 whileHover={{ y: -5 }}
                 transition={{ duration: 0.2 }}
               >
-                <div className="absolute -left-10 top-1/2 transform -translate-y-1/2 h-0.5 w-6 bg-policy"></div>
+                <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 h-0.5 w-5 bg-policy"></div>
                 <div className="flex mb-2">
                   <div className="text-policy">
-                    <Building className="h-5 w-5" />
+                    <Building className="h-4 w-4" />
                   </div>
                 </div>
                 <p className="text-gray-700 text-sm">
@@ -239,22 +239,22 @@ export default function Government() {
         
         {/* Quote and CTA */}
         <motion.div 
-          className="max-w-4xl mx-auto text-center mt-16 reveal opacity-0 translate-y-8"
+          className="max-w-3xl mx-auto text-center mt-12 reveal opacity-0 translate-y-8"
           variants={quoteAnimation}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
         >
-          <blockquote className="text-2xl md:text-3xl font-playfair italic mb-8">
+          <blockquote className="text-xl md:text-2xl font-playfair italic mb-6">
             "The best way to find yourself is to lose yourself in the service of others."
           </blockquote>
-          <p className="font-montserrat font-semibold mb-12">— Mahatma Gandhi</p>
+          <p className="font-montserrat font-semibold text-sm mb-8">— Mahatma Gandhi</p>
           
           <a 
             href="#consulting" 
-            className="bg-policy hover:bg-opacity-90 text-white font-montserrat font-semibold py-3 px-8 rounded-full inline-flex items-center justify-center transition-all"
+            className="bg-policy hover:bg-opacity-90 text-white font-montserrat font-semibold py-2 px-6 rounded-full inline-flex items-center justify-center transition-all text-sm"
           >
-            My College Consulting Approach <ArrowRight className="ml-2 h-5 w-5" />
+            My College Consulting Approach <ArrowRight className="ml-2 h-4 w-4" />
           </a>
         </motion.div>
       </div>
