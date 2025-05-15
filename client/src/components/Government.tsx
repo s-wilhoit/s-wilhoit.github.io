@@ -94,10 +94,10 @@ export default function Government() {
                 whileHover={{ y: -5 }}
                 transition={{ duration: 0.2 }}
               >
-                <div className="absolute -left-10 top-1/2 transform -translate-y-1/2 h-0.5 w-6 bg-policy"></div>
+                <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 h-0.5 w-5 bg-policy"></div>
                 <div className="flex mb-2">
                   <div className="text-policy">
-                    <FileText className="h-5 w-5" />
+                    <FileText className="h-4 w-4" />
                   </div>
                 </div>
                 <p className="text-gray-700 text-sm">
@@ -154,18 +154,18 @@ export default function Government() {
             viewport={{ once: true, amount: 0.1 }}
           >
             <div className="flex items-center mb-8">
-              <div className="bg-policy bg-opacity-20 rounded-full w-10 h-10 flex items-center justify-center mr-4">
-                <div className="bg-policy rounded-full w-3 h-3"></div>
+              <div className="bg-policy bg-opacity-20 rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                <div className="bg-policy rounded-full w-2 h-2"></div>
               </div>
-              <h3 className="font-playfair text-2xl font-bold">Research Intern</h3>
+              <h3 className="font-playfair text-xl font-bold">Research Intern</h3>
             </div>
             
-            <div className="ml-14 mb-6">
-              <p className="text-policy font-montserrat font-semibold">Policy Think Tank • 2019</p>
+            <div className="ml-11 mb-4">
+              <p className="text-policy font-montserrat font-semibold text-sm">Policy Think Tank • 2019</p>
             </div>
             
             <motion.div 
-              className="ml-14 space-y-8"
+              className="ml-11 space-y-6"
               variants={timelineContainer}
               initial="hidden"
               whileInView="visible"
@@ -200,33 +200,33 @@ export default function Government() {
               <h3 className="font-playfair text-xl font-bold mb-3">Key Policy Initiatives</h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <div className="bg-policy bg-opacity-20 rounded-full p-1 mr-3 mt-1">
-                    <Check className="h-4 w-4 text-policy" />
+                  <div className="bg-policy bg-opacity-20 rounded-full p-1 mr-3 mt-1 flex items-center justify-center">
+                    <FileText className="h-4 w-4 text-policy" />
                   </div>
                   <div>
-                    <h4 className="font-montserrat font-semibold">Education Access Reform</h4>
+                    <h4 className="font-montserrat font-semibold text-sm">Education Access Reform</h4>
                     <p className="text-gray-700 text-sm">
                       Contributed to policy overhaul expanding college preparation resources in underserved communities.
                     </p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <div className="bg-policy bg-opacity-20 rounded-full p-1 mr-3 mt-1">
-                    <Check className="h-4 w-4 text-policy" />
+                  <div className="bg-policy bg-opacity-20 rounded-full p-1 mr-3 mt-1 flex items-center justify-center">
+                    <UserCheck className="h-4 w-4 text-policy" />
                   </div>
                   <div>
-                    <h4 className="font-montserrat font-semibold">Data Analysis Framework</h4>
+                    <h4 className="font-montserrat font-semibold text-sm">Data Analysis Framework</h4>
                     <p className="text-gray-700 text-sm">
                       Developed metrics to evaluate program effectiveness and ensure evidence-based decision making.
                     </p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <div className="bg-policy bg-opacity-20 rounded-full p-1 mr-3 mt-1">
-                    <Check className="h-4 w-4 text-policy" />
+                  <div className="bg-policy bg-opacity-20 rounded-full p-1 mr-3 mt-1 flex items-center justify-center">
+                    <Building className="h-4 w-4 text-policy" />
                   </div>
                   <div>
-                    <h4 className="font-montserrat font-semibold">Community Engagement</h4>
+                    <h4 className="font-montserrat font-semibold text-sm">Community Engagement</h4>
                     <p className="text-gray-700 text-sm">
                       Led stakeholder feedback initiatives to ensure policies reflected community needs.
                     </p>
