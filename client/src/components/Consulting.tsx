@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Search, MapPin, GraduationCap, Quote } from "lucide-react";
+import { ArrowRight, Search, BookOpen, PenTool, Hourglass } from "lucide-react";
 
 export default function Consulting() {
   const fadeIn = {
@@ -54,175 +54,173 @@ export default function Consulting() {
   };
 
   return (
-    <section id="consulting" className="py-20 min-h-screen flex items-center relative">
-      <div className="absolute bottom-0 left-0 w-1/3 h-1/2 bg-teal-50"></div>
+    <section id="consulting" className="py-20 min-h-screen flex items-center relative bg-gray-50">
+      <div className="absolute top-0 right-0 rounded-full w-64 h-64 bg-teal-50"></div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 z-10">
         <motion.div 
-          className="text-center max-w-3xl mx-auto mb-16 reveal opacity-0 translate-y-8"
+          className="text-center max-w-3xl mx-auto mb-12 reveal opacity-0 translate-y-8"
           variants={fadeIn}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
         >
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold mb-6">College Consulting</h2>
-          <div className="w-20 h-1 bg-consulting mx-auto mb-8"></div>
-          <p className="text-lg">
-            I believe the college admissions process should focus on finding the right fit—not just chasing prestige. My approach helps students discover where they'll truly thrive.
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold mb-3">College Consulting</h2>
+          <p className="text-gray-600 mb-16">Finding the right fit for your educational journey</p>
+          
+          <h3 className="font-playfair text-2xl md:text-3xl font-bold mb-5">It's about <span className="text-consulting">fit</span>, not just admission</h3>
+          <p className="text-md text-gray-600 mb-8 max-w-2xl mx-auto">
+            College is more than just a name on a diploma—it's where you'll grow, learn, and build 
+            your future. My approach to college consulting focuses on finding institutions where you'll 
+            genuinely thrive, not just get in. With my personal experience at 
+            Harvard and extensive knowledge of various institutions, I offer guidance that goes 
+            beyond rankings and acceptance rates.
           </p>
         </motion.div>
         
         <motion.div 
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16"
+          className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16"
           variants={staggerCards}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
         >
           <motion.div 
-            className="bg-white rounded-xl shadow-lg p-8 path-highlight"
+            className="bg-white rounded-xl shadow-md p-6 path-highlight"
             variants={cardItem}
             whileHover="hover"
           >
             <motion.div 
-              className="text-consulting text-4xl mb-6 path-icon transition-all duration-300"
+              className="text-consulting text-4xl mb-4 flex justify-center path-icon transition-all duration-300"
               whileHover={{ y: -5 }}
             >
-              <Search className="h-12 w-12" />
+              <Search className="h-10 w-10" />
             </motion.div>
-            <h3 className="font-playfair text-2xl font-bold mb-4">Discover</h3>
-            <p>
-              We begin by exploring your unique interests, strengths, learning style, and goals—finding what truly energizes and motivates you.
+            <h3 className="font-playfair text-xl font-bold mb-2 text-center">College Selection</h3>
+            <p className="text-sm text-gray-600 text-center">
+              Finding schools where your unique strengths and interests will truly thrive, focusing on fit rather than just prestige.
             </p>
           </motion.div>
           
           <motion.div 
-            className="bg-white rounded-xl shadow-lg p-8 path-highlight"
+            className="bg-white rounded-xl shadow-md p-6 path-highlight"
             variants={cardItem}
             whileHover="hover"
           >
             <motion.div 
-              className="text-consulting text-4xl mb-6 path-icon transition-all duration-300"
+              className="text-consulting text-4xl mb-4 flex justify-center path-icon transition-all duration-300"
               whileHover={{ y: -5 }}
             >
-              <MapPin className="h-12 w-12" />
+              <BookOpen className="h-10 w-10" />
             </motion.div>
-            <h3 className="font-playfair text-2xl font-bold mb-4">Map</h3>
-            <p>
-              We identify institutions that align with your profile—places where your academic, social, and personal needs will be met and your growth supported.
+            <h3 className="font-playfair text-xl font-bold mb-2 text-center">Application Strategy</h3>
+            <p className="text-sm text-gray-600 text-center">
+              Developing a personalized roadmap for applications that highlights your authentic voice and distinguishes you from your peers.
             </p>
           </motion.div>
           
           <motion.div 
-            className="bg-white rounded-xl shadow-lg p-8 path-highlight"
+            className="bg-white rounded-xl shadow-md p-6 path-highlight"
             variants={cardItem}
             whileHover="hover"
           >
             <motion.div 
-              className="text-consulting text-4xl mb-6 path-icon transition-all duration-300"
+              className="text-consulting text-4xl mb-4 flex justify-center path-icon transition-all duration-300"
               whileHover={{ y: -5 }}
             >
-              <GraduationCap className="h-12 w-12" />
+              <PenTool className="h-10 w-10" />
             </motion.div>
-            <h3 className="font-playfair text-2xl font-bold mb-4">Thrive</h3>
-            <p>
-              I guide you through crafting authentic applications that highlight your genuine self and position you for success at institutions where you'll flourish.
+            <h3 className="font-playfair text-xl font-bold mb-2 text-center">Essay Development</h3>
+            <p className="text-sm text-gray-600 text-center">
+              Crafting compelling personal narratives that showcase your unique perspective, experiences, and aspirations.
+            </p>
+          </motion.div>
+          
+          <motion.div 
+            className="bg-white rounded-xl shadow-md p-6 path-highlight"
+            variants={cardItem}
+            whileHover="hover"
+          >
+            <motion.div 
+              className="text-consulting text-4xl mb-4 flex justify-center path-icon transition-all duration-300"
+              whileHover={{ y: -5 }}
+            >
+              <Hourglass className="h-10 w-10" />
+            </motion.div>
+            <h3 className="font-playfair text-xl font-bold mb-2 text-center">Interview Preparation</h3>
+            <p className="text-sm text-gray-600 text-center">
+              Building confidence through mock interviews and personalized feedback to help you articulate your story clearly.
             </p>
           </motion.div>
         </motion.div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* Consulting image */}
-          <motion.div 
-            className="relative reveal opacity-0 translate-y-8"
-            variants={fadeIn}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.1 }}
-          >
-            <img 
-              src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=800&h=600" 
-              alt="College consulting session" 
-              className="rounded-xl shadow-xl w-full relative z-10"
-            />
-            <div className="absolute -top-6 -left-6 w-full h-full border-4 border-consulting rounded-xl z-0"></div>
-          </motion.div>
+        {/* Testimonials Section */}
+        <motion.div 
+          className="bg-white rounded-xl shadow-lg p-8 mb-16 reveal opacity-0 translate-y-8"
+          variants={fadeIn}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+        >
+          <h3 className="font-playfair text-2xl font-bold mb-2 text-center">What My Students Say</h3>
+          <p className="text-center text-gray-600 mb-8">Success stories from students who found their perfect match</p>
           
-          {/* Testimonials */}
-          <motion.div
-            className="reveal opacity-0 translate-y-8"
-            variants={fadeIn}
+          <motion.div 
+            className="grid grid-cols-1 md:grid-cols-2 gap-8"
+            variants={testimonialContainer}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
           >
-            <h3 className="font-playfair text-2xl font-bold mb-8">What My Students Say</h3>
+            <motion.div 
+              className="bg-gray-50 p-6 rounded-xl"
+              variants={testimonialItem}
+            >
+              <p className="italic text-gray-700 mb-4">
+                "Working with you completely changed my perspective on the college application process. 
+                Instead of just chasing brand names, you helped me find schools where I could actually thrive."
+              </p>
+              <div className="flex items-center">
+                <div className="w-10 h-10 bg-gray-300 rounded-full overflow-hidden mr-3">
+                  <img 
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&h=100" 
+                    alt="Student portrait" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div>
+                  <h4 className="font-montserrat font-semibold">Sarah J.</h4>
+                  <p className="text-sm text-gray-600">Harvard '25</p>
+                </div>
+              </div>
+            </motion.div>
             
             <motion.div 
-              className="space-y-6"
-              variants={testimonialContainer}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.1 }}
+              className="bg-gray-50 p-6 rounded-xl"
+              variants={testimonialItem}
             >
-              <motion.div 
-                className="bg-white p-6 rounded-xl shadow-md"
-                variants={testimonialItem}
-              >
-                <div className="flex items-center mb-4">
-                  <div className="text-consulting mr-3">
-                    <Quote className="h-6 w-6" />
-                  </div>
-                  <div>
-                    <h4 className="font-montserrat font-semibold">Emma T.</h4>
-                    <p className="text-sm text-gray-600">Yale University</p>
-                  </div>
+              <p className="italic text-gray-700 mb-4">
+                "Your guidance was invaluable. You helped me craft authentic essays that truly
+                represented who I am, not who I thought colleges wanted me to be."
+              </p>
+              <div className="flex items-center">
+                <div className="w-10 h-10 bg-gray-300 rounded-full overflow-hidden mr-3">
+                  <img 
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&h=100" 
+                    alt="Student portrait" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                <p className="italic">
-                  "John helped me look beyond rankings to find a school that truly matched my learning style and goals. I couldn't be happier with my choice."
-                </p>
-              </motion.div>
-              
-              <motion.div 
-                className="bg-white p-6 rounded-xl shadow-md"
-                variants={testimonialItem}
-              >
-                <div className="flex items-center mb-4">
-                  <div className="text-consulting mr-3">
-                    <Quote className="h-6 w-6" />
-                  </div>
-                  <div>
-                    <h4 className="font-montserrat font-semibold">Marcus J.</h4>
-                    <p className="text-sm text-gray-600">University of Michigan</p>
-                  </div>
+                <div>
+                  <h4 className="font-montserrat font-semibold">Michael T.</h4>
+                  <p className="text-sm text-gray-600">Yale '24</p>
                 </div>
-                <p className="italic">
-                  "The personalized approach made all the difference. Instead of applying to 15+ schools, we focused on 8 that were perfect fits. I got into 7!"
-                </p>
-              </motion.div>
-              
-              <motion.div 
-                className="bg-white p-6 rounded-xl shadow-md"
-                variants={testimonialItem}
-              >
-                <div className="flex items-center mb-4">
-                  <div className="text-consulting mr-3">
-                    <Quote className="h-6 w-6" />
-                  </div>
-                  <div>
-                    <h4 className="font-montserrat font-semibold">Parent: Sarah L.</h4>
-                    <p className="text-sm text-gray-600">Mother of Princeton Student</p>
-                  </div>
-                </div>
-                <p className="italic">
-                  "John's insight into how different schools support different types of students was invaluable. His approach reduced our family's stress and led to the right match."
-                </p>
-              </motion.div>
+              </div>
             </motion.div>
           </motion.div>
-        </div>
+        </motion.div>
         
         <motion.div 
-          className="mt-16 text-center reveal opacity-0 translate-y-8"
+          className="text-center reveal opacity-0 translate-y-8"
           variants={fadeIn}
           initial="hidden"
           whileInView="visible"
@@ -232,7 +230,7 @@ export default function Consulting() {
             href="#contact" 
             className="bg-consulting hover:bg-opacity-90 text-white font-montserrat font-semibold py-3 px-8 rounded-full inline-flex items-center justify-center transition-all"
           >
-            Get Started with a Consultation <ArrowRight className="ml-2 h-5 w-5" />
+            Schedule a Consultation <ArrowRight className="ml-2 h-5 w-5" />
           </a>
         </motion.div>
       </div>
