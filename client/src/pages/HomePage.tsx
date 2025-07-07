@@ -3,8 +3,7 @@ import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import Pathways from "@/components/Pathways";
 import About from "@/components/About";
-import Education from "@/components/Education";
-import Government from "@/components/Government";
+import EducationGovernment from "@/components/EducationGovernment";
 import Consulting from "@/components/Consulting";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -58,9 +57,8 @@ export default function HomePage() {
         <Hero />
         <Pathways />
         <About />
-        <Education />
+        <EducationGovernment />
         <Consulting />
-        <Government />
         <Contact />
       </main>
       

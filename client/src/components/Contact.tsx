@@ -50,6 +50,20 @@ export default function Contact() {
     },
   });
 
+  const handleInterestChange = (value: string) => {
+    if (value === "policy") {
+      // Navigate to education section and set government tab active
+      window.location.hash = "#government";
+      // Scroll to the section
+      setTimeout(() => {
+        const section = document.getElementById("education");
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    }
+  };
+
   const onSubmit = async (data: FormValues) => {
     setIsSubmitting(true);
     try {
@@ -327,7 +341,10 @@ export default function Contact() {
                         I'm interested in:
                       </FormLabel>
                       <Select
-                        onValueChange={field.onChange}
+                        onValueChange={(value) => {
+                          field.onChange(value);
+                          handleInterestChange(value);
+                        }}
                         defaultValue={field.value}
                       >
                         <FormControl>

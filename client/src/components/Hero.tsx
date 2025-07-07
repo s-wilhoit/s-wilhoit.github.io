@@ -60,11 +60,13 @@ export default function Hero() {
             </h1>
             <h2 className="font-playfair text-3xl text-dark opacity-80 mb-8">
               I help others craft their stories through{" "}
-              <span className="text-harvard">education</span>{" and "}
+              <span className="text-harvard">education</span>
+              {" and "}
               <span className="text-consulting">policy</span> guidance.
             </h2>
             <p className="text-lg mb-10 max-w-lg">
-            I'm a Harvard graduate with a passion for helping others navigate complex systems and find their authentic path forward.
+              I'm a Harvard graduate with a passion for helping others navigate
+              complex systems and find their authentic path forward.
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
               <a
@@ -96,8 +98,14 @@ export default function Hero() {
               className="rounded-3xl shadow-2xl w-full max-w-md mx-auto object-cover aspect-square z-10 relative"
             />
             {/* Decorative elements */}
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-full z-0 bg-[#93cbc5]" style={{backgroundColor: '#eaf2d7'}}></div>
-            <div className="absolute -top-6 -left-6 w-24 h-24 rounded-full z-0 bg-[#66b9b1ad]" style={{backgroundColor: '#eaf2d7'}}></div>
+            <div
+              className="absolute -bottom-6 -right-6 w-32 h-32 rounded-full z-0 bg-[#93cbc5]"
+              style={{ backgroundColor: "rgba(102, 185, 177, 0.5)" }}
+            ></div>
+            <div
+              className="absolute -top-6 -left-6 w-24 h-24 rounded-full z-0 bg-[#66b9b1ad]"
+              style={{ backgroundColor: "rgba(102, 185, 177, 0.5)" }}
+            ></div>
           </motion.div>
         </div>
 

@@ -73,10 +73,10 @@ export default function About() {
             <div className="w-20 h-1 bg-harvard mb-8"></div>
             
             <p className="text-lg mb-6">
-              I've always been fascinated by the intersection of education, policy, and personal growth. My journey began at Harvard, where I studied Government with a focus on public policy.
+              I've always been fascinated by the intersection of education, policy, and personal growth. As a first-generation, low-income student, my life was completely transformed through education—most profoundly when I was admitted to Harvard at 16, an opportunity that opened doors I never imagined possible.
             </p>
             <p className="text-lg mb-6">
-              During my time at Harvard, I discovered my passion for helping others navigate complex systems—whether governmental processes or college admissions—to find their authentic path forward.
+              At Harvard, I studied Government with a focus on public policy, and  discovered my passion for helping others navigate complex systems—whether governmental processes or college admissions—to find their best path forward.
             </p>
             <p className="text-lg mb-8">
               Today, I bring together my unique experiences to serve in multiple capacities: as a policy professional contributing to meaningful change, and as a college consultant guiding students to institutions where they'll truly thrive.

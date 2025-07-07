@@ -14,7 +14,6 @@ export default function Footer() {
     { href: "#about", label: "About" },
     { href: "#education", label: "Education" },
     { href: "#consulting", label: "College Consulting" },
-    { href: "#government", label: "Policy Work" },
     { href: "#contact", label: "Contact" },
   ];
 
