@@ -115,7 +115,22 @@ export default function Pathways() {
             </div>
             <div className="p-6">
               <p className="mb-4">Explore my government and policy experience, projects I've contributed to, and my public service mission.</p>
-              <a href="#government" className="inline-flex items-center font-montserrat font-semibold text-policy hover:underline">
+              <a 
+                href="#education" 
+                onClick={(e) => {
+                  e.preventDefault();
+                  // Set hash to government to trigger the view switch
+                  window.location.hash = "#government";
+                  // Scroll to the section
+                  setTimeout(() => {
+                    const section = document.getElementById("education");
+                    if (section) {
+                      section.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }, 100);
+                }}
+                className="inline-flex items-center font-montserrat font-semibold text-policy hover:underline"
+              >
                 Learn more <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </div>
