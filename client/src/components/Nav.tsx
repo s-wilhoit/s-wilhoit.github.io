@@ -28,6 +28,7 @@ export default function Nav() {
   const navLinks = [
     { href: "#about", label: "About" },
     { href: "#education", label: "Education" },
+    { href: "#government", label: "Government Work" },
     { href: "#consulting", label: "College Consulting" },
     { href: "#contact", label: "Contact" },
   ];
@@ -43,6 +44,16 @@ export default function Nav() {
               <a 
                 key={link.href} 
                 href={link.href} 
+                onClick={link.href === "#government" ? (e) => {
+                  e.preventDefault();
+                  window.location.hash = "#government";
+                  setTimeout(() => {
+                    const section = document.getElementById("education");
+                    if (section) {
+                      section.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }, 100);
+                } : undefined}
                 className={`font-montserrat text-dark transition-colors ${
                   link.href === "#government" 
                     ? "hover:text-policy" 
@@ -79,7 +90,19 @@ export default function Nav() {
                 <a 
                   key={link.href} 
                   href={link.href} 
-                  onClick={closeMenu}
+                  onClick={(e) => {
+                    if (link.href === "#government") {
+                      e.preventDefault();
+                      window.location.hash = "#government";
+                      setTimeout(() => {
+                        const section = document.getElementById("education");
+                        if (section) {
+                          section.scrollIntoView({ behavior: "smooth" });
+                        }
+                      }, 100);
+                    }
+                    closeMenu();
+                  }}
                   className={`font-montserrat text-dark py-2 transition-colors ${
                     link.href === "#government" 
                       ? "hover:text-policy" 

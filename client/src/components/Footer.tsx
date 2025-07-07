@@ -13,6 +13,7 @@ export default function Footer() {
   const navLinks = [
     { href: "#about", label: "About" },
     { href: "#education", label: "Education" },
+    { href: "#government", label: "Government Work" },
     { href: "#consulting", label: "College Consulting" },
     { href: "#contact", label: "Contact" },
   ];
@@ -41,6 +42,16 @@ export default function Footer() {
               <a
                 key={link.href}
                 href={link.href}
+                onClick={link.href === "#government" ? (e) => {
+                  e.preventDefault();
+                  window.location.hash = "#government";
+                  setTimeout(() => {
+                    const section = document.getElementById("education");
+                    if (section) {
+                      section.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }, 100);
+                } : undefined}
                 className="hover:text-harvard transition-colors mb-2 md:mb-0"
               >
                 {link.label}
