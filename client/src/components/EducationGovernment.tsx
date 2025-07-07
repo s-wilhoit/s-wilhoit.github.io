@@ -103,10 +103,10 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
         >
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 mb-4">
             <motion.button
-              className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 cursor-pointer group w-full md:w-auto justify-center md:justify-start ${
+              className={`flex items-center gap-3 px-4 py-3 rounded-lg border-2 transition-all duration-300 cursor-pointer group w-full md:w-auto justify-center md:justify-start ${
                 activeView === 'education' 
-                  ? 'text-harvard bg-harvard bg-opacity-10 shadow-md' 
-                  : 'text-gray-500 hover:text-harvard hover:bg-harvard hover:bg-opacity-5'
+                  ? 'text-harvard border-harvard bg-transparent shadow-md' 
+                  : 'text-gray-500 border-gray-300 hover:text-harvard hover:border-harvard'
               }`}
               onClick={() => setActiveView('education')}
               whileHover={{ scale: 1.02 }}
@@ -123,10 +123,10 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
             <div className="h-px w-20 md:h-12 md:w-px bg-gray-300"></div>
             
             <motion.button
-              className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 cursor-pointer group w-full md:w-auto justify-center md:justify-start ${
+              className={`flex items-center gap-3 px-4 py-3 rounded-lg border-2 transition-all duration-300 cursor-pointer group w-full md:w-auto justify-center md:justify-start ${
                 activeView === 'government' 
-                  ? 'text-policy bg-policy bg-opacity-10 shadow-md' 
-                  : 'text-gray-500 hover:text-policy hover:bg-policy hover:bg-opacity-5'
+                  ? 'text-policy border-policy bg-transparent shadow-md' 
+                  : 'text-gray-500 border-gray-300 hover:text-policy hover:border-policy'
               }`}
               onClick={() => setActiveView('government')}
               whileHover={{ scale: 1.02 }}
