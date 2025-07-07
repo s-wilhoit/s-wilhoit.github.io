@@ -119,16 +119,11 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-20 min-h-screen flex items-center relative bg-dark text-white border-t border-gray-200"
+      className="py-20 min-h-screen flex items-center relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white border-t border-gray-200"
     >
-      <div className="absolute top-0 left-0 w-1/2 h-full">
-        <img
-          src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1000&h=1200"
-          alt="Creative storytelling concept"
-          className="w-full h-full object-cover opacity-30"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-dark to-transparent"></div>
-      </div>
+      {/* Decorative gradient elements */}
+      <div className="absolute top-10 left-10 w-96 h-96 bg-gradient-to-br from-harvard/20 to-transparent rounded-full blur-3xl"></div>
+      <div className="absolute bottom-10 right-10 w-80 h-80 bg-gradient-to-br from-consulting/20 to-transparent rounded-full blur-3xl"></div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -276,15 +271,19 @@ export default function Contact() {
 
           {/* Contact form */}
           <motion.div
-            className="bg-white text-dark rounded-xl shadow-2xl p-8 reveal opacity-0 translate-y-8"
+            className="bg-white/95 backdrop-blur-sm text-dark rounded-2xl shadow-2xl p-8 border border-gray-200/20 reveal opacity-0 translate-y-8"
             variants={fadeIn}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
           >
-            <h3 className="font-playfair text-2xl font-bold mb-6">
-              Send Me a Message
-            </h3>
+            <div className="text-center mb-8">
+              <h3 className="font-playfair text-3xl font-bold mb-2 text-harvard">
+                Send Me a Message
+              </h3>
+              <div className="w-16 h-1 bg-harvard mx-auto mb-4"></div>
+              <p className="text-gray-600">I'd love to hear from you</p>
+            </div>
 
             <Form {...form}>
               <form
@@ -302,7 +301,7 @@ export default function Contact() {
                       <FormControl>
                         <Input
                           placeholder="Your name"
-                          className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-harvard"
+                          className="w-full p-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-harvard/50 focus:border-harvard transition-all duration-200 bg-gray-50/50"
                           {...field}
                         />
                       </FormControl>
@@ -323,7 +322,7 @@ export default function Contact() {
                         <Input
                           placeholder="Your email"
                           type="email"
-                          className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-harvard"
+                          className="w-full p-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-harvard/50 focus:border-harvard transition-all duration-200 bg-gray-50/50"
                           {...field}
                         />
                       </FormControl>
@@ -348,7 +347,7 @@ export default function Contact() {
                         defaultValue={field.value}
                       >
                         <FormControl>
-                          <SelectTrigger className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-harvard">
+                          <SelectTrigger className="w-full p-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-harvard/50 focus:border-harvard transition-all duration-200 bg-gray-50/50">
                             <SelectValue placeholder="Select an option" />
                           </SelectTrigger>
                         </FormControl>
@@ -381,8 +380,8 @@ export default function Contact() {
                       <FormControl>
                         <Textarea
                           placeholder="How can I help you?"
-                          className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-harvard"
-                          rows={4}
+                          className="w-full p-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-harvard/50 focus:border-harvard transition-all duration-200 bg-gray-50/50 resize-none"
+                          rows={5}
                           {...field}
                         />
                       </FormControl>
@@ -393,7 +392,7 @@ export default function Contact() {
 
                 <Button
                   type="submit"
-                  className="w-full bg-harvard hover:bg-opacity-90 text-white font-montserrat font-semibold py-3 px-8 rounded-lg inline-flex items-center justify-center transition-all"
+                  className="w-full bg-gradient-to-r from-harvard to-red-700 hover:from-red-700 hover:to-harvard text-white font-montserrat font-semibold py-4 px-8 rounded-xl inline-flex items-center justify-center transition-all duration-300 transform hover:scale-[1.02] shadow-lg hover:shadow-xl"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? (

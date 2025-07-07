@@ -27,6 +27,7 @@ A narrative-driven personal website showcasing Harvard education, government wor
 - **2025-01-07**: Added very light maroon/blue background colors for Education/Government toggle sections
 - **2025-01-07**: Added faint line separators between all sections (Pathways, About, Education/Government, Consulting, Contact, Footer)
 - **2025-01-07**: Updated Policy Work "Learn more" button to navigate to government section with automatic tab switching
+- **2025-01-07**: Redesigned contact form with modern gradient background, semi-transparent form, and maroon-themed styling
 
 ## Key Features
 - Responsive design for mobile, tablet, and desktop
