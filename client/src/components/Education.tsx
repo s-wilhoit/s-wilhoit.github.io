@@ -45,7 +45,7 @@ export default function Education() {
 
   return (
     <section id="education" className="py-16 min-h-screen flex items-center relative bg-gray-50">
-      <div className="absolute top-0 right-0 rounded-full w-48 h-48 bg-pink-100"></div>
+      <div className="absolute top-0 right-0 rounded-full w-48 h-48 bg-red-100"></div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 z-10">
         <motion.div 
           className="text-center max-w-2xl mx-auto mb-12 reveal opacity-0 translate-y-8"

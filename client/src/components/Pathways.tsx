@@ -65,7 +65,7 @@ export default function Pathways() {
             whileHover="hover"
           >
             <div className="h-24 bg-harvard relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-harvard to-pink-400"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-harvard to-red-800"></div>
               <div className="absolute bottom-4 left-4">
                 <h3 className="font-playfair text-white text-xl font-bold">About Me</h3>
                 <p className="text-white text-sm">My background & story</p>

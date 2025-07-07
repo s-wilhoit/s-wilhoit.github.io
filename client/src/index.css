@@ -15,7 +15,7 @@
   --card-foreground: 220 10% 40%;
   --border: 20 5.9% 90%;
   --input: 20 5.9% 90%;
-  --primary: 354 70% 78%;
+  --primary: 0 100% 25%;
   --primary-foreground: 0 0% 100%;
   --secondary: 60 4.8% 95.9%;
   --secondary-foreground: 24 9.8% 10%;
@@ -26,8 +26,8 @@
   --ring: 220 10% 40%;
   --radius: 0.5rem;
   
-  /* Custom colors (pastel) */
-  --harvard: 354 70% 78%;
+  /* Custom colors (maroon theme) */
+  --harvard: 0 100% 25%;
   --policy: 220 40% 70%;
   --consulting: 175 48% 75%;
   --dark: 218 25% 45%;
@@ -45,7 +45,7 @@
   --card-foreground: 0 0% 98%;
   --border: 240 3.7% 15.9%;
   --input: 240 3.7% 15.9%;
-  --primary: 354 70% 78%;
+  --primary: 0 100% 25%;
   --primary-foreground: 0 0% 100%;
   --secondary: 240 3.7% 15.9%;
   --secondary-foreground: 0 0% 98%;
@@ -55,8 +55,8 @@
   --destructive-foreground: 0 0% 98%;
   --ring: 240 4.9% 83.9%;
   
-  /* Custom colors (pastel) */
-  --harvard: 354 70% 78%;
+  /* Custom colors (maroon theme) */
+  --harvard: 0 100% 25%;
   --policy: 220 40% 70%;
   --consulting: 175 48% 75%;
   --dark: 218 25% 45%;
@@ -91,11 +91,11 @@
   }
 
   .text-harvard {
-    color: hsl(354, 77%, 47%);
+    color: hsl(0, 100%, 25%);
   }
 
   .bg-harvard {
-    background-color: hsl(354, 77%, 47%);
+    background-color: hsl(0, 100%, 25%);
   }
 
   .text-policy {
@@ -131,7 +131,7 @@
   }
   
   .border-harvard {
-    border-color: hsl(354, 77%, 47%);
+    border-color: hsl(0, 100%, 25%);
   }
   
   .border-policy {
@@ -147,7 +147,7 @@
     top: 0;
     left: 0;
     height: 4px;
-    background-color: hsl(354, 77%, 47%);
+    background-color: hsl(0, 100%, 25%);
     z-index: 50;
     transition: width 0.3s ease;
   }
@@ -189,7 +189,7 @@
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background-color: hsl(354, 77%, 47%);
+    background-color: hsl(0, 100%, 25%);
     left: -8px;
     top: 12px;
   }
