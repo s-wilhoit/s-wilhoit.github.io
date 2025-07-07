@@ -119,7 +119,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-20 min-h-screen flex items-center relative bg-dark text-white"
+      className="py-20 min-h-screen flex items-center relative bg-dark text-white border-t border-gray-200"
     >
       <div className="absolute top-0 left-0 w-1/2 h-full">
         <img

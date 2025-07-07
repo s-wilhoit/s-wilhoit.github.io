@@ -36,7 +36,7 @@ export default function Pathways() {
   };
 
   return (
-    <section id="pathways" className="py-20 min-h-screen flex items-center relative">
+    <section id="pathways" className="py-20 min-h-screen flex items-center relative border-t border-gray-200">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 z-10">
         <motion.div
           className="reveal opacity-0 translate-y-8"

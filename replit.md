@@ -25,7 +25,7 @@ A narrative-driven personal website showcasing Harvard education, government wor
 - **2025-01-07**: Redesigned toggle with clickable section headings instead of pill buttons
 - **2025-01-07**: Contact form "Policy Work" selection automatically navigates to government view
 - **2025-01-07**: Added very light maroon/blue background colors for Education/Government toggle sections
-- **2025-01-07**: Added faint line separator above College Consulting section
+- **2025-01-07**: Added faint line separators between all sections (Pathways, About, Education/Government, Consulting, Contact, Footer)
 
 ## Key Features
 - Responsive design for mobile, tablet, and desktop
