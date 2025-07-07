@@ -68,18 +68,7 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
     }
   };
 
-  const tabVariants = {
-    active: { 
-      backgroundColor: "rgb(134 25 143)", // maroon
-      color: "white",
-      transition: { duration: 0.3 }
-    },
-    inactive: { 
-      backgroundColor: "white",
-      color: "rgb(134 25 143)",
-      transition: { duration: 0.3 }
-    }
-  };
+
 
   const contentVariants = {
     hidden: { opacity: 0, x: -20 },
@@ -104,34 +93,60 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
       )}
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 z-10">
-        {/* Toggle Tabs */}
+        {/* Header with Toggle */}
         <motion.div 
-          className="flex justify-center mb-8"
+          className="text-center max-w-4xl mx-auto mb-12"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <div className="bg-white rounded-full p-1 shadow-lg border-2 border-gray-100">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 mb-4">
             <motion.button
-              className="px-6 py-3 rounded-full font-montserrat font-semibold text-sm flex items-center"
-              variants={tabVariants}
-              animate={activeView === 'education' ? 'active' : 'inactive'}
+              className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 cursor-pointer group w-full md:w-auto justify-center md:justify-start ${
+                activeView === 'education' 
+                  ? 'text-harvard bg-harvard bg-opacity-10 shadow-md' 
+                  : 'text-gray-500 hover:text-harvard hover:bg-harvard hover:bg-opacity-5'
+              }`}
               onClick={() => setActiveView('education')}
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
             >
-              <GraduationCap className="w-4 h-4 mr-2" />
-              Education
+              <GraduationCap className={`h-6 md:h-8 w-6 md:w-8 transition-colors ${
+                activeView === 'education' ? 'text-harvard' : 'text-gray-400 group-hover:text-harvard'
+              }`} />
+              <h2 className="font-playfair text-2xl md:text-3xl lg:text-4xl font-bold">
+                Education Journey
+              </h2>
             </motion.button>
+            
+            <div className="h-px w-20 md:h-12 md:w-px bg-gray-300"></div>
+            
             <motion.button
-              className="px-6 py-3 rounded-full font-montserrat font-semibold text-sm flex items-center ml-1"
-              variants={tabVariants}
-              animate={activeView === 'government' ? 'active' : 'inactive'}
+              className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 cursor-pointer group w-full md:w-auto justify-center md:justify-start ${
+                activeView === 'government' 
+                  ? 'text-policy bg-policy bg-opacity-10 shadow-md' 
+                  : 'text-gray-500 hover:text-policy hover:bg-policy hover:bg-opacity-5'
+              }`}
               onClick={() => setActiveView('government')}
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
             >
-              <Briefcase className="w-4 h-4 mr-2" />
-              Policy Work
+              <Briefcase className={`h-6 md:h-8 w-6 md:w-8 transition-colors ${
+                activeView === 'government' ? 'text-policy' : 'text-gray-400 group-hover:text-policy'
+              }`} />
+              <h2 className="font-playfair text-2xl md:text-3xl lg:text-4xl font-bold">
+                Government Work
+              </h2>
             </motion.button>
           </div>
+          
+          <p className="text-gray-600 text-sm">
+            {activeView === 'education' 
+              ? 'From Harvard to lifelong learning' 
+              : 'Creating meaningful change through policy and public service'
+            }
+          </p>
         </motion.div>
 
         {/* Content */}
@@ -145,19 +160,6 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
           {activeView === 'education' ? (
             // Education Content
             <>
-              <motion.div 
-                className="text-center max-w-2xl mx-auto mb-12 reveal opacity-0 translate-y-8"
-                variants={fadeIn}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.1 }}
-              >
-                <h2 className="font-playfair text-3xl md:text-4xl font-bold mb-4">
-                  <GraduationCap className="inline-block mr-3 h-8 w-8 text-harvard" />
-                  Education Journey
-                </h2>
-                <p className="text-gray-600 text-sm">From Harvard to lifelong learning</p>
-              </motion.div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
                 {/* Left Column - Harvard */}
@@ -349,19 +351,6 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
           ) : (
             // Government Content
             <>
-              <motion.div 
-                className="text-center max-w-2xl mx-auto mb-12 reveal opacity-0 translate-y-8"
-                variants={fadeIn}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.1 }}
-              >
-                <h2 className="font-playfair text-3xl md:text-4xl font-bold mb-4">
-                  <Briefcase className="inline-block mr-3 h-8 w-8 text-policy" />
-                  Government Work
-                </h2>
-                <p className="text-gray-600 text-sm">Creating meaningful change through policy and public service</p>
-              </motion.div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
                 {/* Left Column - Policy Analyst */}
