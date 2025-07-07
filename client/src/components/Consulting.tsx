@@ -54,7 +54,7 @@ export default function Consulting() {
   };
 
   return (
-    <section id="consulting" className="py-20 min-h-screen flex items-center relative bg-gray-50">
+    <section id="consulting" className="py-20 min-h-screen flex items-center relative bg-gray-50 border-t border-gray-200">
       <div className="absolute top-0 right-0 rounded-full w-64 h-64 bg-teal-50"></div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 z-10">
         <motion.div 
