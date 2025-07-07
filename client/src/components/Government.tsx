@@ -244,18 +244,7 @@ export default function Government() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
-        >
-          <blockquote className="text-xl md:text-2xl font-playfair italic mb-6">
-            "The best way to find yourself is to lose yourself in the service of others."
-          </blockquote>
-          <p className="font-montserrat font-semibold text-sm mb-8">— Mahatma Gandhi</p>
-          
-          <a 
-            href="#consulting" 
-            className="bg-policy hover:bg-opacity-90 text-white font-montserrat font-semibold py-2 px-6 rounded-full inline-flex items-center justify-center transition-all text-sm"
-          >
-            My College Consulting Approach <ArrowRight className="ml-2 h-4 w-4" />
-          </a>
+        >          
         </motion.div>
       </div>
     </section>

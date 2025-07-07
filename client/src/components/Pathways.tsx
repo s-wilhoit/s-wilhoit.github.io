@@ -45,9 +45,9 @@ export default function Pathways() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
         >
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-center mb-4">Choose Your Path</h2>
-          <p className="text-center text-lg max-w-2xl mx-auto mb-16">
-            I wear multiple hats and connect with different audiences. How would you like to explore my story?
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-center mb-4">What are you interested in?</h2>
+          <p className="text-center text-lg max-w-4xl mx-auto mb-16">
+            I wear multiple hats and connect with different audiences. How would you like to get to know me better?
           </p>
         </motion.div>
         
@@ -64,20 +64,15 @@ export default function Pathways() {
             variants={pathCard}
             whileHover="hover"
           >
-            <div className="h-48 bg-harvard relative overflow-hidden">
-              <img 
-                src="https://pixabay.com/get/g99d282344b7f9824e1674d6c6dcf7d0f499610e38b7a8a9c624b42d48e70e67b46352f478fe19109359866b8c8af63f35c8736c7fd06c2c679eb77dae6527de5_1280.jpg" 
-                alt="Harvard University campus" 
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-harvard to-transparent opacity-60"></div>
+            <div className="h-24 bg-harvard relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-harvard to-pink-400"></div>
               <div className="absolute bottom-4 left-4">
-                <h3 className="font-playfair text-white text-2xl font-bold">About Me</h3>
+                <h3 className="font-playfair text-white text-xl font-bold">About Me</h3>
                 <p className="text-white text-sm">My background & story</p>
               </div>
             </div>
             <div className="p-6">
-              <p className="mb-6">Discover my journey from Harvard to where I am today, my values, and what drives me to help others succeed.</p>
+              <p className="mb-4">Discover my journey from Harvard to where I am today, my values, and what drives me to help others succeed.</p>
               <a href="#about" className="inline-flex items-center font-montserrat font-semibold text-harvard hover:underline">
                 Learn more <ArrowRight className="ml-2 h-4 w-4" />
               </a>
@@ -90,20 +85,15 @@ export default function Pathways() {
             variants={pathCard}
             whileHover="hover"
           >
-            <div className="h-48 bg-policy relative overflow-hidden">
-              <img 
-                src="https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?auto=format&fit=crop&w=800&h=400" 
-                alt="Professional government workspace" 
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-policy to-transparent opacity-60"></div>
+            <div className="h-24 bg-policy relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-policy to-blue-400"></div>
               <div className="absolute bottom-4 left-4">
-                <h3 className="font-playfair text-white text-2xl font-bold">Policy Work</h3>
+                <h3 className="font-playfair text-white text-xl font-bold">Policy Work</h3>
                 <p className="text-white text-sm">My professional journey</p>
               </div>
             </div>
             <div className="p-6">
-              <p className="mb-6">Explore my government and policy experience, projects I've contributed to, and my public service mission.</p>
+              <p className="mb-4">Explore my government and policy experience, projects I've contributed to, and my public service mission.</p>
               <a href="#government" className="inline-flex items-center font-montserrat font-semibold text-policy hover:underline">
                 Learn more <ArrowRight className="ml-2 h-4 w-4" />
               </a>
@@ -116,20 +106,15 @@ export default function Pathways() {
             variants={pathCard}
             whileHover="hover"
           >
-            <div className="h-48 bg-consulting relative overflow-hidden">
-              <img 
-                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&h=400" 
-                alt="College consulting session" 
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-consulting to-transparent opacity-60"></div>
+            <div className="h-24 bg-consulting relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-consulting to-teal-400"></div>
               <div className="absolute bottom-4 left-4">
-                <h3 className="font-playfair text-white text-2xl font-bold">College Consulting</h3>
+                <h3 className="font-playfair text-white text-xl font-bold">College Consulting</h3>
                 <p className="text-white text-sm">How I help students thrive</p>
               </div>
             </div>
             <div className="p-6">
-              <p className="mb-6">Find out how I guide students to find their perfect college fit, not just chase rankings and prestige.</p>
+              <p className="mb-4">Find out how I guide students to find their perfect college fit, not just chase rankings and prestige.</p>
               <a href="#consulting" className="inline-flex items-center font-montserrat font-semibold text-consulting hover:underline">
                 Learn more <ArrowRight className="ml-2 h-4 w-4" />
               </a>

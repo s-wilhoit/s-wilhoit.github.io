@@ -37,7 +37,7 @@ export default function Nav() {
     <nav className={`fixed top-0 w-full bg-white bg-opacity-90 shadow-md z-40 transition-all duration-300 ${scrolled ? 'py-2' : 'py-4'}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          <a href="#hero" className="font-playfair text-harvard text-2xl font-bold">John Doe</a>
+          <a href="#hero" className="font-playfair text-harvard text-2xl font-bold">Samantha Wilhoit</a>
           
           <div className="hidden md:flex space-x-8">
             {navLinks.map((link) => (

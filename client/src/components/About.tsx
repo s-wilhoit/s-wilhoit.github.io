@@ -80,38 +80,7 @@ export default function About() {
             </p>
             <p className="text-lg mb-8">
               Today, I bring together my unique experiences to serve in multiple capacities: as a policy professional contributing to meaningful change, and as a college consultant guiding students to institutions where they'll truly thrive.
-            </p>
-            
-            <motion.div 
-              className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8"
-              variants={statsContainer}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.1 }}
-            >
-              <motion.div 
-                className="bg-white p-4 rounded-lg shadow text-center"
-                variants={statsItem}
-              >
-                <div className="text-harvard text-4xl font-bold mb-2">4+</div>
-                <div className="text-sm text-gray-600">Years in Public Policy</div>
-              </motion.div>
-              <motion.div 
-                className="bg-white p-4 rounded-lg shadow text-center"
-                variants={statsItem}
-              >
-                <div className="text-harvard text-4xl font-bold mb-2">50+</div>
-                <div className="text-sm text-gray-600">Students Guided</div>
-              </motion.div>
-              <motion.div 
-                className="bg-white p-4 rounded-lg shadow text-center"
-                variants={statsItem}
-              >
-                <div className="text-harvard text-4xl font-bold mb-2">95%</div>
-                <div className="text-sm text-gray-600">Success Rate</div>
-              </motion.div>
-            </motion.div>
-            
+            </p>            
             <a 
               href="#education" 
               className="bg-harvard hover:bg-opacity-90 text-white font-montserrat font-semibold py-3 px-8 rounded-full inline-flex items-center justify-center transition-all"
