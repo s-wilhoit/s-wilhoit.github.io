@@ -59,12 +59,12 @@ export default function Hero() {
               Samantha Wilhoit
             </h1>
             <h2 className="font-playfair text-3xl text-dark opacity-80 mb-8">
-              Crafting stories through{" "}
+              I help others craft their stories through{" "}
               <span className="text-harvard">education</span>{" and "}
               <span className="text-consulting">policy</span> guidance.
             </h2>
             <p className="text-lg mb-10 max-w-lg">
-            Harvard graduate with a passion for helping others navigate complex systems and find their authentic path forward.
+            I'm a Harvard graduate with a passion for helping others navigate complex systems and find their authentic path forward.
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
               <a

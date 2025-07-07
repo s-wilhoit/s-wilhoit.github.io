@@ -13,8 +13,8 @@ export default function Footer() {
   const navLinks = [
     { href: "#about", label: "About" },
     { href: "#education", label: "Education" },
-    { href: "#government", label: "Policy Work" },
     { href: "#consulting", label: "College Consulting" },
+    { href: "#government", label: "Policy Work" },
     { href: "#contact", label: "Contact" },
   ];
 

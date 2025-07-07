@@ -336,11 +336,11 @@ export default function Contact() {
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
-                          <SelectItem value="policy">
-                            Your Policy Work
-                          </SelectItem>
                           <SelectItem value="consulting">
                             College Consulting
+                          </SelectItem>
+                          <SelectItem value="policy">
+                            Your Policy Work
                           </SelectItem>
                           <SelectItem value="speaking">
                             Speaking Engagement

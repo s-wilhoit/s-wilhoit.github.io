@@ -79,28 +79,7 @@ export default function Pathways() {
             </div>
           </motion.div>
           
-          {/* Path 2: Policy Professional */}
-          <motion.div 
-            className="path-card"
-            variants={pathCard}
-            whileHover="hover"
-          >
-            <div className="h-24 bg-policy relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-policy to-blue-400"></div>
-              <div className="absolute bottom-4 left-4">
-                <h3 className="font-playfair text-white text-xl font-bold">Policy Work</h3>
-                <p className="text-white text-sm">My professional journey</p>
-              </div>
-            </div>
-            <div className="p-6">
-              <p className="mb-4">Explore my government and policy experience, projects I've contributed to, and my public service mission.</p>
-              <a href="#government" className="inline-flex items-center font-montserrat font-semibold text-policy hover:underline">
-                Learn more <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
-            </div>
-          </motion.div>
-          
-          {/* Path 3: College Consultant */}
+          {/* Path 2: College Consultant */}
           <motion.div 
             className="path-card"
             variants={pathCard}
@@ -116,6 +95,27 @@ export default function Pathways() {
             <div className="p-6">
               <p className="mb-4">Find out how I guide students to find their perfect college fit, not just chase rankings and prestige.</p>
               <a href="#consulting" className="inline-flex items-center font-montserrat font-semibold text-consulting hover:underline">
+                Learn more <ArrowRight className="ml-2 h-4 w-4" />
+              </a>
+            </div>
+          </motion.div>
+          
+          {/* Path 3: Policy Professional */}
+          <motion.div 
+            className="path-card"
+            variants={pathCard}
+            whileHover="hover"
+          >
+            <div className="h-24 bg-policy relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-policy to-blue-400"></div>
+              <div className="absolute bottom-4 left-4">
+                <h3 className="font-playfair text-white text-xl font-bold">Policy Work</h3>
+                <p className="text-white text-sm">My professional journey</p>
+              </div>
+            </div>
+            <div className="p-6">
+              <p className="mb-4">Explore my government and policy experience, projects I've contributed to, and my public service mission.</p>
+              <a href="#government" className="inline-flex items-center font-montserrat font-semibold text-policy hover:underline">
                 Learn more <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </div>

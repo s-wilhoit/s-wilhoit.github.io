@@ -59,8 +59,8 @@ export default function HomePage() {
         <Pathways />
         <About />
         <Education />
-        <Government />
         <Consulting />
+        <Government />
         <Contact />
       </main>
       
