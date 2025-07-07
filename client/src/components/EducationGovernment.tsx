@@ -85,13 +85,12 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
   };
 
   return (
-    <section id="education" className={`py-16 min-h-screen flex items-center relative transition-colors duration-500 ${activeView === 'education' ? 'bg-red-50' : 'bg-blue-50'}`}>
+    <section id="education" className="py-16 min-h-screen flex items-center relative transition-colors duration-500 bg-[#ffe0e036]">
       {activeView === 'education' ? (
         <div className="absolute top-0 right-0 rounded-full w-48 h-48 bg-red-100"></div>
       ) : (
         <div className="absolute top-0 left-0 rounded-full w-48 h-48 bg-blue-100 opacity-50"></div>
       )}
-      
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 z-10">
         {/* Header with Toggle */}
         <motion.div 
@@ -159,8 +158,7 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
         >
           {activeView === 'education' ? (
             // Education Content
-            <>
-              
+            (<>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
                 {/* Left Column - Harvard */}
                 <motion.div 
@@ -326,7 +324,6 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                   </motion.div>
                 </motion.div>
               </div>
-              
               {/* Education Quote and CTA */}
               <motion.div 
                 className="max-w-3xl mx-auto text-center mt-12 reveal opacity-0 translate-y-8"
@@ -347,11 +344,10 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                   Learn About My Consulting <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
               </motion.div>
-            </>
+            </>)
           ) : (
             // Government Content
-            <>
-              
+            (<>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
                 {/* Left Column - Policy Analyst */}
                 <motion.div 
@@ -516,7 +512,6 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                   </motion.div>
                 </motion.div>
               </div>
-              
               {/* Government Quote and CTA */}
               <motion.div 
                 className="max-w-3xl mx-auto text-center mt-12 reveal opacity-0 translate-y-8"
@@ -537,7 +532,7 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                   Get in Touch <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
               </motion.div>
-            </>
+            </>)
           )}
         </motion.div>
       </div>
