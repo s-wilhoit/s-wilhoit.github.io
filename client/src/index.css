@@ -32,6 +32,8 @@
   --consulting: 175 48% 75%;
   --dark: 218 25% 45%;
   --light: 220 30% 96%;
+  --maroon-light: 331 20% 98%;
+  --blue-light: 220 30% 98%;
 }
 
 .dark {
@@ -128,6 +130,14 @@
 
   .bg-light {
     background-color: hsl(220, 30%, 96%);
+  }
+
+  .bg-maroon-light {
+    background-color: hsl(331, 20%, 98%);
+  }
+
+  .bg-blue-light {
+    background-color: hsl(220, 30%, 98%);
   }
   
   .border-harvard {

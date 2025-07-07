@@ -85,7 +85,7 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
   };
 
   return (
-    <section id="education" className="py-16 min-h-screen flex items-center relative transition-colors duration-500 bg-[#ffe0e036]">
+    <section id="education" className={`py-16 min-h-screen flex items-center relative transition-colors duration-500 ${activeView === 'education' ? 'bg-maroon-light' : 'bg-blue-light'}`}>
       {activeView === 'education' ? (
         <div className="absolute top-0 right-0 rounded-full w-48 h-48 bg-red-100"></div>
       ) : (
