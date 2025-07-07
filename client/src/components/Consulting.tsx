@@ -54,9 +54,8 @@ export default function Consulting() {
   };
 
   return (
-    <section id="consulting" className="py-20 min-h-screen flex items-center relative bg-consulting-light border-t-4 border-consulting">
-      <div className="absolute top-0 right-0 rounded-full w-64 h-64 bg-consulting opacity-10"></div>
-      <div className="absolute bottom-0 left-0 rounded-full w-48 h-48 bg-consulting opacity-5"></div>
+    <section id="consulting" className="py-20 min-h-screen flex items-center relative bg-gray-50">
+      <div className="absolute top-0 right-0 rounded-full w-64 h-64 bg-teal-50"></div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 z-10">
         <motion.div 
           className="text-center max-w-3xl mx-auto mb-12 reveal opacity-0 translate-y-8"
@@ -65,10 +64,7 @@ export default function Consulting() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
         >
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-consulting rounded-full mb-6">
-            <BookOpen className="h-8 w-8 text-white" />
-          </div>
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold mb-3 text-consulting">College Consulting</h2>
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold mb-3">College Consulting</h2>
           <p className="text-gray-600 mb-16">Finding the right fit for your educational journey</p>
           
           <h3 className="font-playfair text-2xl md:text-3xl font-bold mb-5">It's about <span className="text-consulting">fit</span>, not just admission</h3>
