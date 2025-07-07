@@ -39,14 +39,12 @@ export default function Hero() {
         initial="hidden"
         animate="visible"
       />
-
       <motion.div
         className="absolute bottom-20 right-10 w-64 h-64 rounded-full bg-policy z-0"
         variants={decorativeElement2}
         initial="hidden"
         animate="visible"
       />
-
       {/* Hero content */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 z-10 pt-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -71,7 +69,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
               <a
                 href="#pathways"
-                className="bg-harvard hover:bg-opacity-90 text-white font-montserrat font-semibold py-3 px-8 rounded-full inline-flex items-center justify-center transition-all"
+                className="hover:bg-opacity-90 text-white font-montserrat font-semibold py-3 px-8 rounded-full inline-flex items-center justify-center transition-all bg-[#800]"
               >
                 Discover My Story <ArrowRight className="ml-2 h-5 w-5" />
               </a>
