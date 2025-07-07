@@ -97,7 +97,7 @@ export default function Hero() {
             />
             {/* Decorative elements */}
             <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-full z-0" style={{backgroundColor: '#eaf2d7'}}></div>
-            <div className="absolute -top-6 -left-6 w-24 h-24 rounded-full z-0" style={{backgroundColor: '#eaf2d7'}}></div>
+            <div className="absolute -top-6 -left-6 w-24 h-24 rounded-full z-0 bg-[#e7dedf]" style={{backgroundColor: '#eaf2d7'}}></div>
           </motion.div>
         </div>
 
