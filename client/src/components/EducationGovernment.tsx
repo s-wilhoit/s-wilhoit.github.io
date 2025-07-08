@@ -22,7 +22,7 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
 
     // Check initial hash
     handleHashChange();
-    
+
     window.addEventListener('hashchange', handleHashChange);
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
@@ -104,7 +104,7 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
             <motion.button
               className={`flex items-center gap-3 px-4 py-3 rounded-lg border-2 transition-all duration-300 cursor-pointer group w-full md:w-auto justify-center md:justify-start ${
                 activeView === 'education' 
-                  ? 'text-harvard border-harvard bg-transparent shadow-md' 
+                  ? 'text-harvard border-harvard bg-harvard bg-opacity-10 shadow-md' 
                   : 'text-gray-500 border-gray-300 hover:text-harvard hover:border-harvard'
               }`}
               onClick={() => setActiveView('education')}
@@ -118,9 +118,9 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                 Education Journey
               </h2>
             </motion.button>
-            
+
             <div className="h-px w-20 md:h-12 md:w-px bg-gray-300"></div>
-            
+
             <motion.button
               className={`flex items-center gap-3 px-4 py-3 rounded-lg border-2 transition-all duration-300 cursor-pointer group w-full md:w-auto justify-center md:justify-start ${
                 activeView === 'government' 
@@ -139,7 +139,7 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
               </h2>
             </motion.button>
           </div>
-          
+
           <p className="text-gray-600 text-sm">
             {activeView === 'education' 
               ? 'From Harvard to lifelong learning' 
@@ -174,11 +174,11 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                     </div>
                     <h3 className="font-playfair text-xl font-bold">Harvard University</h3>
                   </div>
-                  
+
                   <div className="ml-11 mb-4">
                     <p className="text-harvard font-montserrat font-semibold text-sm">Bachelor of Arts • 2018-2022</p>
                   </div>
-                  
+
                   <motion.div 
                     className="ml-11 space-y-6"
                     variants={timelineContainer}
@@ -203,7 +203,7 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                         </div>
                       </div>
                     </motion.div>
-                    
+
                     <motion.div
                       className="relative bg-white p-6 rounded-xl shadow-md"
                       variants={timelineItem}
@@ -221,7 +221,7 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                         </div>
                       </div>
                     </motion.div>
-                    
+
                     <motion.div
                       className="relative bg-white p-6 rounded-xl shadow-md"
                       variants={timelineItem}
@@ -241,7 +241,7 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                     </motion.div>
                   </motion.div>
                 </motion.div>
-                
+
                 {/* Right Column - Other Education */}
                 <motion.div 
                   className="reveal opacity-0 translate-y-8"
@@ -256,11 +256,11 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                     </div>
                     <h3 className="font-playfair text-xl font-bold">Continued Learning</h3>
                   </div>
-                  
+
                   <div className="ml-11 mb-4">
                     <p className="text-harvard font-montserrat font-semibold text-sm">Professional Development • Ongoing</p>
                   </div>
-                  
+
                   <motion.div 
                     className="ml-11 space-y-6"
                     variants={timelineContainer}
@@ -285,7 +285,7 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                         </div>
                       </div>
                     </motion.div>
-                    
+
                     <motion.div
                       className="relative bg-white p-6 rounded-xl shadow-md"
                       variants={timelineItem}
@@ -303,7 +303,7 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                         </div>
                       </div>
                     </motion.div>
-                    
+
                     <motion.div
                       className="relative bg-white p-6 rounded-xl shadow-md"
                       variants={timelineItem}
@@ -336,7 +336,7 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                   "Education is the most powerful weapon which you can use to change the world."
                 </blockquote>
                 <p className="font-montserrat font-semibold text-sm mb-8">— Nelson Mandela</p>
-                
+
                 <a 
                   href="#consulting" 
                   className="bg-harvard hover:bg-opacity-90 text-white font-montserrat font-semibold py-2 px-6 rounded-full inline-flex items-center justify-center transition-all text-sm"
@@ -363,11 +363,11 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                     </div>
                     <h3 className="font-playfair text-xl font-bold">Policy Analyst</h3>
                   </div>
-                  
+
                   <div className="ml-11 mb-4">
                     <p className="text-policy font-montserrat font-semibold text-sm">State Government • 2022-Present</p>
                   </div>
-                  
+
                   <motion.div 
                     className="ml-11 space-y-6"
                     variants={timelineContainer}
@@ -392,7 +392,7 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                         </div>
                       </div>
                     </motion.div>
-                    
+
                     <motion.div
                       className="relative bg-white p-6 rounded-xl shadow-md"
                       variants={timelineItem}
@@ -410,7 +410,7 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                         </div>
                       </div>
                     </motion.div>
-                    
+
                     <motion.div
                       className="relative bg-white p-6 rounded-xl shadow-md"
                       variants={timelineItem}
@@ -429,7 +429,7 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                     </motion.div>
                   </motion.div>
                 </motion.div>
-                
+
                 {/* Right Column - Other Government Work */}
                 <motion.div 
                   className="reveal opacity-0 translate-y-8"
@@ -444,11 +444,11 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                     </div>
                     <h3 className="font-playfair text-xl font-bold">Research Intern</h3>
                   </div>
-                  
+
                   <div className="ml-11 mb-4">
                     <p className="text-policy font-montserrat font-semibold text-sm">Policy Think Tank • 2019</p>
                   </div>
-                  
+
                   <motion.div 
                     className="ml-11 space-y-6"
                     variants={timelineContainer}
@@ -473,7 +473,7 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                         </div>
                       </div>
                     </motion.div>
-                    
+
                     <motion.div
                       className="relative bg-white p-6 rounded-xl shadow-md"
                       variants={timelineItem}
@@ -491,7 +491,7 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                         </div>
                       </div>
                     </motion.div>
-                    
+
                     <motion.div
                       className="relative bg-white p-6 rounded-xl shadow-md"
                       variants={timelineItem}
@@ -524,7 +524,7 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                   "The best way to find yourself is to lose yourself in the service of others."
                 </blockquote>
                 <p className="font-montserrat font-semibold text-sm mb-8">— Mahatma Gandhi</p>
-                
+
                 <a 
                   href="#contact" 
                   className="bg-policy hover:bg-opacity-90 text-white font-montserrat font-semibold py-2 px-6 rounded-full inline-flex items-center justify-center transition-all text-sm"
