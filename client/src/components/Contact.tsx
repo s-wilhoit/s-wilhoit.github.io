@@ -285,13 +285,9 @@ export default function Contact() {
               <p className="text-gray-600">I'd love to hear from you</p>
             </div>
 
-            <div className="w-full h-[600px]">
-              <div 
-                data-tf-live="01JZM06RYCJFB5GGGX5VRZ532R"
-                data-tf-width="100%"
-                data-tf-height="600"
-                className="w-full h-full"
-              ></div>
+            <div className="min-h-[600px]">
+              <div data-tf-live="01JZM06RYCJFB5GGGX5VRZ532R"></div>
+              <script src="//embed.typeform.com/next/embed.js"></script>
             </div>
           </motion.div>
         </div>
