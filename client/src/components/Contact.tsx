@@ -269,7 +269,7 @@ export default function Contact() {
             </div>
           </motion.div>
 
-          {/* Contact form */}
+          {/* Typeform embed */}
           <motion.div
             className="bg-white/95 backdrop-blur-sm text-dark rounded-2xl shadow-2xl p-8 border border-gray-200/20 reveal opacity-0 translate-y-8"
             variants={fadeIn}
@@ -285,126 +285,10 @@ export default function Contact() {
               <p className="text-gray-600">I'd love to hear from you</p>
             </div>
 
-            <Form {...form}>
-              <form
-                onSubmit={form.handleSubmit(onSubmit)}
-                className="space-y-6"
-              >
-                <FormField
-                  control={form.control}
-                  name="name"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel className="text-sm font-montserrat font-semibold">
-                        Full Name
-                      </FormLabel>
-                      <FormControl>
-                        <Input
-                          placeholder="Your name"
-                          className="w-full p-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-harvard/50 focus:border-harvard transition-all duration-200 bg-gray-50/50"
-                          {...field}
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-
-                <FormField
-                  control={form.control}
-                  name="email"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel className="text-sm font-montserrat font-semibold">
-                        Email Address
-                      </FormLabel>
-                      <FormControl>
-                        <Input
-                          placeholder="Your email"
-                          type="email"
-                          className="w-full p-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-harvard/50 focus:border-harvard transition-all duration-200 bg-gray-50/50"
-                          {...field}
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-
-                <FormField
-                  control={form.control}
-                  name="interest"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel className="text-sm font-montserrat font-semibold">
-                        I'm interested in:
-                      </FormLabel>
-                      <Select
-                        onValueChange={(value) => {
-                          field.onChange(value);
-                          handleInterestChange(value);
-                        }}
-                        defaultValue={field.value}
-                      >
-                        <FormControl>
-                          <SelectTrigger className="w-full p-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-harvard/50 focus:border-harvard transition-all duration-200 bg-gray-50/50">
-                            <SelectValue placeholder="Select an option" />
-                          </SelectTrigger>
-                        </FormControl>
-                        <SelectContent>
-                          <SelectItem value="consulting">
-                            College Consulting
-                          </SelectItem>
-                          <SelectItem value="policy">
-                            Your Policy Work
-                          </SelectItem>
-                          <SelectItem value="speaking">
-                            Speaking Engagement
-                          </SelectItem>
-                          <SelectItem value="other">Other</SelectItem>
-                        </SelectContent>
-                      </Select>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-
-                <FormField
-                  control={form.control}
-                  name="message"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel className="text-sm font-montserrat font-semibold">
-                        Message
-                      </FormLabel>
-                      <FormControl>
-                        <Textarea
-                          placeholder="How can I help you?"
-                          className="w-full p-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-harvard/50 focus:border-harvard transition-all duration-200 bg-gray-50/50 resize-none"
-                          rows={5}
-                          {...field}
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-
-                <Button
-                  type="submit"
-                  className="w-full bg-gradient-to-r from-harvard to-red-700 hover:from-red-700 hover:to-harvard text-white font-montserrat font-semibold py-4 px-8 rounded-xl inline-flex items-center justify-center transition-all duration-300 transform hover:scale-[1.02] shadow-lg hover:shadow-xl"
-                  disabled={isSubmitting}
-                >
-                  {isSubmitting ? (
-                    "Sending..."
-                  ) : (
-                    <>
-                      Send Message <Send className="ml-2 h-5 w-5" />
-                    </>
-                  )}
-                </Button>
-              </form>
-            </Form>
+            <div className="min-h-[600px]">
+              <div data-tf-live="01JZM06RYCJFB5GGGX5VRZ532R"></div>
+              <script src="//embed.typeform.com/next/embed.js"></script>
+            </div>
           </motion.div>
         </div>
       </div>
