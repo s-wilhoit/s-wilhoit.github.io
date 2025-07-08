@@ -104,8 +104,8 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
             <motion.button
               className={`flex items-center gap-3 px-4 py-3 rounded-lg border-2 transition-all duration-300 cursor-pointer group w-full md:w-auto justify-center md:justify-start ${
                 activeView === 'education' 
-                  ? 'text-harvard border-harvard bg-transparent shadow-md' 
-                  : 'text-gray-500 border-gray-300 hover:text-harvard hover:border-harvard'
+                  ? 'text-harvard border-harvard bg-harvard bg-opacity-10 shadow-md' 
+                  : 'text-gray-500 border-gray-300 hover:text-harvard hover:border-harvard hover:bg-harvard hover:bg-opacity-5'
               }`}
               onClick={() => setActiveView('education')}
               whileHover={{ scale: 1.02 }}
