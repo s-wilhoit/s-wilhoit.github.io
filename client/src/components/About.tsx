@@ -81,12 +81,30 @@ export default function About() {
             <p className="text-lg mb-8">
               Today, I bring together my unique experiences to serve in multiple capacities: as a policy professional contributing to meaningful change, and as a college consultant guiding students to institutions where they'll truly thrive.
             </p>            
-            <a 
-              href="#education" 
-              className="bg-harvard hover:bg-opacity-90 text-white font-montserrat font-semibold py-3 px-8 rounded-full inline-flex items-center justify-center transition-all"
-            >
-              My Education Journey <ArrowRight className="ml-2 h-5 w-5" />
-            </a>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a 
+                href="#education" 
+                className="bg-harvard hover:bg-opacity-90 text-white font-montserrat font-semibold py-3 px-8 rounded-full inline-flex items-center justify-center transition-all"
+              >
+                My Education Journey <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
+              <a 
+                href="#education"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.hash = "#government";
+                  setTimeout(() => {
+                    const section = document.getElementById("education");
+                    if (section) {
+                      section.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }, 100);
+                }}
+                className="bg-policy hover:bg-opacity-90 text-white font-montserrat font-semibold py-3 px-8 rounded-full inline-flex items-center justify-center transition-all"
+              >
+                Government Work <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
+            </div>
           </motion.div>
           
           {/* About image collage */}
