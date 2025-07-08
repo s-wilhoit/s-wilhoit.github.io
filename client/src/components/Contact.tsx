@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Mail, MapPin, Clock, Send } from "lucide-react";
+import { useTypeform } from "@/lib/typeform";
 import {
   Form,
   FormControl,
@@ -39,6 +40,7 @@ type FormValues = z.infer<typeof formSchema>;
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
+  const { showSidetab, hideSidetab } = useTypeform();
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -49,6 +51,23 @@ export default function Contact() {
       message: "",
     },
   });
+
+  // Show Typeform sidetab when component mounts
+  useEffect(() => {
+    showSidetab({
+      formId: '01JZM06RYCJFB5GGGX5VRZ532R',
+      width: 320,
+      height: 400,
+      buttonColor: '#8B1538', // Harvard crimson color
+      buttonText: 'Quick Contact',
+      position: 'right'
+    });
+
+    // Cleanup on unmount
+    return () => {
+      hideSidetab();
+    };
+  }, [showSidetab, hideSidetab]);
 
   const handleInterestChange = (value: string) => {
     if (value === "policy") {
