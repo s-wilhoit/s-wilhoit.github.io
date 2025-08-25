@@ -298,11 +298,11 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                         <div>
                           <h4 className="font-montserrat font-semibold">Ivy Impact</h4>
                           <p className="text-gray-600 text-sm mb-1"><i>July 2025 – Present</i></p>
-                          <p className="text-gray-600 text-sm mb-2">Global — Co‑Founder</p>
                           <ul className="list-disc pl-5 space-y-1 text-gray-600 text-sm">
-                            <li>Mission: Empowers high school students worldwide to transform passions into purpose through immersive camps, one‑on‑one mentorship, and global experiences—led by world‑class talent and grounded in curiosity, joy, and wonder.</li>
-                            <li>Values: Passion‑driven learning; equity through access (scholarships for underserved students); mentorship with meaning; global perspectives; wonder as the gateway to growth.</li>
-                            <li>Impact: Teaching experiences across 6 continents and 37+ countries, reaching 1,024+ students in one‑on‑one and small group settings.</li>
+                            <li>Co‑founded education startup delivering immersive winter and summer camps at Harvard; architected programs and curriculum across leadership, policy, and entrepreneurship.</li>
+                            <li>Launched year‑round mentorship matching students with world‑class mentors; built training, onboarding, and quality standards to ensure measurable outcomes.</li>
+                            <li>Advanced access and impact: created needs‑based scholarships and reserved seats; dedicated a portion of revenue to fund underserved students while maintaining excellence.</li>
+                            <li>Built partnerships, admissions, and ops: school/org partnerships, application pipeline and CRM, instructor recruitment, safety protocols, and SOPs for scale.</li>
                           </ul>
                         </div>
                       </div>
@@ -319,7 +319,6 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                         <div>
                           <h4 className="font-montserrat font-semibold">Two Cents Insights</h4>
                           <p className="text-gray-600 text-sm mb-1"><i>Jan – March 2024</i></p>
-                          <p className="text-gray-600 text-sm mb-2">Remote — Operations Consultant</p>
                           <ul className="list-disc pl-5 space-y-1 text-gray-600 text-sm">
                             <li>Established operational foundations and workflow design for a small business providing research services and executive coaching.</li>
                             <li>Implemented a functional CRM to increase productivity and streamline business communications.</li>
@@ -339,7 +338,6 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                         <div>
                           <h4 className="font-montserrat font-semibold">Harvard Project for Asian and International Relations (HPAIR)</h4>
                           <p className="text-gray-600 text-sm mb-1"><i>Sep 2020 – Oct 2022</i></p>
-                          <p className="text-gray-600 text-sm mb-2">Cambridge, MA — Operations Director</p>
                           <ul className="list-disc pl-5 space-y-1 text-gray-600 text-sm">
                             <li>Analyzed international conference bid reports and negotiated with principal prospects for the annual Asia Conference.</li>
                             <li>Directed operations and coordinated with the India team on logistics: lodging for 80+ staff, students, and speakers; venue coordination; and production/sales of merchandise.</li>
