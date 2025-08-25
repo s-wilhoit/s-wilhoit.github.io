@@ -7,7 +7,7 @@ import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 const repo = "s-wilhoit.github.io"; // e.g. "my-app"
 
 export default defineConfig({
-  base: `/${repo}/`, // If deploying to https://<USER>.github.io/<REPO>/
+  base: `/`, // If deploying to https://<USER>.github.io/<REPO>/
   plugins: [
     react(),
     runtimeErrorOverlay(),
