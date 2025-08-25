@@ -444,92 +444,15 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                         <div>
                           <h4 className="font-montserrat font-semibold mb-2">Cyber Threats — U.S. Cyber Command</h4>
                           <p className="text-gray-600 text-sm">
-                            Researched North Korean cyber recruitment strategies and talent pipelines; briefed at the National Security Agency (NSA) to inform intelligence and strategy leadership.
+                            Researched North Korean cyber recruitment strategies and talent pipelines; briefed at the National Security Agency to inform intelligence and strategy leadership.
                           </p>
                         </div>
                       </div>
                     </motion.div>
                   </motion.div>
-                </motion.div>
+               </motion.div>
                 
-                {/* Right Column - Other Government Work */}
-                <motion.div 
-                  className="reveal opacity-0 translate-y-8"
-                  variants={fadeIn}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, amount: 0.1 }}
-                >
-                  <div className="flex items-center mb-8">
-                    <div className="bg-policy bg-opacity-20 rounded-full w-8 h-8 flex items-center justify-center mr-3">
-                      <div className="bg-policy rounded-full w-2 h-2"></div>
-                    </div>
-                    <h3 className="font-playfair text-xl font-bold">Nation Building II — Applied Policy Lab</h3>
-                  </div>
-                  
-                  <div className="ml-11 mb-4">
-                    <p className="text-policy font-montserrat font-semibold text-sm">Spring 2025 • Chickasaw Nation, Oklahoma</p>
-                  </div>
-                  
-                  <motion.div 
-                    className="ml-11 space-y-6"
-                    variants={timelineContainer}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.1 }}
-                  >
-                    <motion.div
-                      className="relative bg-white p-6 rounded-xl shadow-md"
-                      variants={timelineItem}
-                      whileHover={{ y: -5 }}
-                      transition={{ duration: 0.2 }}
-                    >
-                      <div className="flex items-start">
-                        <Home className="h-5 w-5 text-policy mt-1 mr-3 flex-shrink-0" />
-                        <div>
-                          <h4 className="font-montserrat font-semibold mb-2">Housing Insecurity in the Chickasaw Nation (2025)</h4>
-                          <p className="text-gray-600 text-sm">
-                            Co-authored an applied policy report for the Chickasaw Nation government on improving housing access and landlord engagement for tribal citizens; presented findings and recommendations to tribal leadership in Oklahoma.
-                          </p>
-                        </div>
-                      </div>
-                    </motion.div>
-                    
-                    <motion.div
-                      className="relative bg-white p-6 rounded-xl shadow-md"
-                      variants={timelineItem}
-                      whileHover={{ y: -5 }}
-                      transition={{ duration: 0.2 }}
-                    >
-                      <div className="flex items-start">
-                        <UserCheck className="h-5 w-5 text-policy mt-1 mr-3 flex-shrink-0" />
-                        <div>
-                          <h4 className="font-montserrat font-semibold mb-2">Methods & Evidence</h4>
-                          <p className="text-gray-600 text-sm">
-                            Conducted stakeholder interviews, analyzed housing market and affordability data, and synthesized program constraints to inform actionable recommendations.
-                          </p>
-                        </div>
-                      </div>
-                    </motion.div>
-                    
-                    <motion.div
-                      className="relative bg-white p-6 rounded-xl shadow-md"
-                      variants={timelineItem}
-                      whileHover={{ y: -5 }}
-                      transition={{ duration: 0.2 }}
-                    >
-                      <div className="flex items-start">
-                        <FileText className="h-5 w-5 text-policy mt-1 mr-3 flex-shrink-0" />
-                        <div>
-                          <h4 className="font-montserrat font-semibold mb-2">Deliverables & Presentation</h4>
-                          <p className="text-gray-600 text-sm">
-                            Produced a research report and executive presentation; delivered to Chickasaw Nation leadership with an implementation-focused roadmap.
-                          </p>
-                        </div>
-                      </div>
-                    </motion.div>
-                  </motion.div>
-                </motion.div>
+                
               </div>
               {/* Government Quote and CTA */}
               <motion.div 
