@@ -66,7 +66,7 @@ export default function Consulting() {
         >
           <h2 className="font-playfair text-4xl md:text-5xl font-bold mb-3">College Consulting</h2>
           <p className="text-gray-600 mb-16">Finding the right fit for your educational journey</p>
-          
+
           <h3 className="font-playfair text-2xl md:text-3xl font-bold mb-5">It's about <span className="text-consulting">fit</span>, not just admission</h3>
           <p className="text-md text-gray-600 mb-8 max-w-2xl mx-auto">
             College is more than just a name on a diploma—it's where you'll grow, learn, and build 
@@ -76,7 +76,7 @@ export default function Consulting() {
             beyond rankings and acceptance rates.
           </p>
         </motion.div>
-        
+
         <motion.div 
           className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16"
           variants={staggerCards}
@@ -100,7 +100,7 @@ export default function Consulting() {
               Finding schools where your unique strengths and interests will truly thrive, focusing on fit rather than just prestige.
             </p>
           </motion.div>
-          
+
           <motion.div 
             className="bg-white rounded-xl shadow-md p-6 path-highlight"
             variants={cardItem}
@@ -117,7 +117,7 @@ export default function Consulting() {
               Developing a personalized roadmap for applications that highlights your authentic voice and distinguishes you from your peers.
             </p>
           </motion.div>
-          
+
           <motion.div 
             className="bg-white rounded-xl shadow-md p-6 path-highlight"
             variants={cardItem}
@@ -134,7 +134,7 @@ export default function Consulting() {
               Crafting compelling personal narratives that showcase your unique perspective, experiences, and aspirations.
             </p>
           </motion.div>
-          
+
           <motion.div 
             className="bg-white rounded-xl shadow-md p-6 path-highlight"
             variants={cardItem}
@@ -152,7 +152,7 @@ export default function Consulting() {
             </p>
           </motion.div>
         </motion.div>
-        
+
         {/* Testimonials Section */}
         <motion.div 
           className="bg-white rounded-xl shadow-lg p-8 mb-16 reveal opacity-0 translate-y-8"
@@ -163,7 +163,7 @@ export default function Consulting() {
         >
           <h3 className="font-playfair text-2xl font-bold mb-2 text-center">What My Students Say</h3>
           <p className="text-center text-gray-600 mb-8">Success stories from students who found their perfect match</p>
-          
+
           <motion.div 
             className="grid grid-cols-1 md:grid-cols-2 gap-8"
             variants={testimonialContainer}
@@ -193,7 +193,7 @@ export default function Consulting() {
                 </div>
               </div>
             </motion.div>
-            
+
             <motion.div 
               className="bg-gray-50 p-6 rounded-xl"
               variants={testimonialItem}
@@ -203,22 +203,15 @@ export default function Consulting() {
                 represented who I am, not who I thought colleges wanted me to be."
               </p>
               <div className="flex items-center">
-                <div className="w-10 h-10 bg-gray-300 rounded-full overflow-hidden mr-3">
-                  <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&h=100" 
-                    alt="Student portrait" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
                 <div>
-                  <h4 className="font-montserrat font-semibold">Michael T.</h4>
-                  <p className="text-sm text-gray-600">Yale '24</p>
+                  <h4 className="font-montserrat font-semibold">Michael R.</h4>
+                  <p className="text-sm text-gray-600">Stanford '24</p>
                 </div>
               </div>
             </motion.div>
           </motion.div>
         </motion.div>
-        
+
         <motion.div 
           className="text-center reveal opacity-0 translate-y-8"
           variants={fadeIn}
