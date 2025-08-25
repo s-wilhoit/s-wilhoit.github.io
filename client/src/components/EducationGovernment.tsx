@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { GraduationCap, BookOpen, Award, UserPlus, Briefcase, FileText, UserCheck, Building, ArrowRight, Check, Globe2, Settings } from "lucide-react";
+import { GraduationCap, BookOpen, Award, UserPlus, Briefcase, FileText, UserCheck, Building, ArrowRight, Check, Globe2, Settings, Sprout } from "lucide-react";
 
 interface EducationGovernmentProps {
   defaultView?: 'education' | 'government';
@@ -294,15 +294,15 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                       transition={{ duration: 0.2 }}
                     >
                       <div className="flex items-start">
-                        <Globe2 className="h-5 w-5 text-harvard mt-1 mr-3 flex-shrink-0" />
+                        <Sprout className="h-5 w-5 text-harvard mt-1 mr-3 flex-shrink-0" />
                         <div>
-                          <h4 className="font-montserrat font-semibold">Harvard Undergraduate Foreign Policy Initiative</h4>
-                          <p className="text-gray-600 text-sm mb-1"><i>Feb 2023 – Dec 2024</i></p>
-                          <p className="text-gray-600 text-sm mb-2">Cambridge, MA — Deputy Director: U.S. Government</p>
+                          <h4 className="font-montserrat font-semibold">Ivy Impact</h4>
+                          <p className="text-gray-600 text-sm mb-1"><i>July 2025 – Present</i></p>
+                          <p className="text-gray-600 text-sm mb-2">Global — Co‑Founder</p>
                           <ul className="list-disc pl-5 space-y-1 text-gray-600 text-sm">
-                            <li>Stewarded policy research commissioned by the White House Council on Native American Affairs (WHCNAA) concerning the U.N. Declaration on the Rights of Indigenous Peoples (UNDRIP). Presented a comparative analysis of the U.S., Canada, Australia, and New Zealand’s implementation at the U.S. Department of the Interior to WHCNAA, with recommendations to increase U.S. protections of Indigenous rights.</li>
-                            <li>Managed policy research commissioned by United States Africa Command on countering the expansion of violent extremist organizations in West Africa; presented findings at AFRICOM.</li>
-                            <li>Researched North Korean cyber recruitment strategies commissioned by United States Cyber Command; presented findings at the NSA to inform intelligence and strategy leadership.</li>
+                            <li>Mission: Empowers high school students worldwide to transform passions into purpose through immersive camps, one‑on‑one mentorship, and global experiences—led by world‑class talent and grounded in curiosity, joy, and wonder.</li>
+                            <li>Values: Passion‑driven learning; equity through access (scholarships for underserved students); mentorship with meaning; global perspectives; wonder as the gateway to growth.</li>
+                            <li>Impact: Teaching experiences across 6 continents and 37+ countries, reaching 1,024+ students in one‑on‑one and small group settings.</li>
                           </ul>
                         </div>
                       </div>
