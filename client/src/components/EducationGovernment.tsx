@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { GraduationCap, BookOpen, Award, UserPlus, Briefcase, FileText, UserCheck, Building, ArrowRight, Check } from "lucide-react";
+import { GraduationCap, BookOpen, Award, UserPlus, Briefcase, FileText, UserCheck, Building, ArrowRight, Check, Globe2, Settings } from "lucide-react";
 
 interface EducationGovernmentProps {
   defaultView?: 'education' | 'government';
@@ -294,13 +294,16 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                       transition={{ duration: 0.2 }}
                     >
                       <div className="flex items-start">
-                        <FileText className="h-5 w-5 text-harvard mt-1 mr-3 flex-shrink-0" />
+                        <Globe2 className="h-5 w-5 text-harvard mt-1 mr-3 flex-shrink-0" />
                         <div>
-                          <h4 className="font-montserrat font-semibold mb-2">Harvard Undergraduate Foreign Policy Initiative</h4>
-                          <p className="text-gray-600 text-sm">
-                            Advanced training in quantitative analysis, policy evaluation methodologies, 
-                            and evidence-based decision making for public sector applications.
-                          </p>
+                          <h4 className="font-montserrat font-semibold">Harvard Undergraduate Foreign Policy Initiative</h4>
+                          <p className="text-gray-600 text-sm mb-1"><i>Feb 2023 – Dec 2024</i></p>
+                          <p className="text-gray-600 text-sm mb-2">Cambridge, MA — Deputy Director: U.S. Government</p>
+                          <ul className="list-disc pl-5 space-y-1 text-gray-600 text-sm">
+                            <li>Stewarded policy research commissioned by the White House Council on Native American Affairs (WHCNAA) concerning the U.N. Declaration on the Rights of Indigenous Peoples (UNDRIP). Presented a comparative analysis of the U.S., Canada, Australia, and New Zealand’s implementation at the U.S. Department of the Interior to WHCNAA, with recommendations to increase U.S. protections of Indigenous rights.</li>
+                            <li>Managed policy research commissioned by United States Africa Command on countering the expansion of violent extremist organizations in West Africa; presented findings at AFRICOM.</li>
+                            <li>Researched North Korean cyber recruitment strategies commissioned by United States Cyber Command; presented findings at the NSA to inform intelligence and strategy leadership.</li>
+                          </ul>
                         </div>
                       </div>
                     </motion.div>
@@ -312,13 +315,15 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                       transition={{ duration: 0.2 }}
                     >
                       <div className="flex items-start">
-                        <UserCheck className="h-5 w-5 text-harvard mt-1 mr-3 flex-shrink-0" />
+                        <Settings className="h-5 w-5 text-harvard mt-1 mr-3 flex-shrink-0" />
                         <div>
-                          <h4 className="font-montserrat font-semibold mb-2">Two Cents Insights</h4>
-                          <p className="text-gray-600 text-sm">
-                            Specialized coursework in college admissions processes, student development theory, 
-                            and culturally responsive counseling practices.
-                          </p>
+                          <h4 className="font-montserrat font-semibold">Two Cents Insights</h4>
+                          <p className="text-gray-600 text-sm mb-1"><i>Jan – March 2024</i></p>
+                          <p className="text-gray-600 text-sm mb-2">Remote — Operations Consultant</p>
+                          <ul className="list-disc pl-5 space-y-1 text-gray-600 text-sm">
+                            <li>Established operational foundations and workflow design for a small business providing research services and executive coaching.</li>
+                            <li>Implemented a functional CRM to increase productivity and streamline business communications.</li>
+                          </ul>
                         </div>
                       </div>
                     </motion.div>
@@ -332,11 +337,14 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                       <div className="flex items-start">
                         <Building className="h-5 w-5 text-harvard mt-1 mr-3 flex-shrink-0" />
                         <div>
-                          <h4 className="font-montserrat font-semibold mb-2">Harvard Project for Asian and International Relations</h4>
-                          <p className="text-gray-600 text-sm">
-                            Intensive program covering budget analysis, stakeholder engagement, 
-                            and implementation strategies for effective public service delivery.
-                          </p>
+                          <h4 className="font-montserrat font-semibold">Harvard Project for Asian and International Relations (HPAIR)</h4>
+                          <p className="text-gray-600 text-sm mb-1"><i>Sep 2020 – Oct 2022</i></p>
+                          <p className="text-gray-600 text-sm mb-2">Cambridge, MA — Operations Director</p>
+                          <ul className="list-disc pl-5 space-y-1 text-gray-600 text-sm">
+                            <li>Analyzed international conference bid reports and negotiated with principal prospects for the annual Asia Conference.</li>
+                            <li>Directed operations and coordinated with the India team on logistics: lodging for 80+ staff, students, and speakers; venue coordination; and production/sales of merchandise.</li>
+                            <li>Sourced 150+ hotels across 40+ countries, shortlisted and negotiated with top international hotel chains, authored prospect reports, and closed final details of the stay.</li>
+                          </ul>
                         </div>
                       </div>
                     </motion.div>
