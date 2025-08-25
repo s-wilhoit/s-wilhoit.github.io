@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ChevronDown, ArrowRight } from "lucide-react";
+import imageName from '@/assets/headshot.png';
 
 export default function Hero() {
   const fadeIn = {
@@ -93,7 +94,7 @@ export default function Hero() {
             transition={{ delay: 0.2 }}
           >
             <img
-              src="src/assets/headshot.png"
+              src={imageName}
               alt="Portrait with Harvard in background"
               className="rounded-3xl shadow-2xl w-full max-w-md mx-auto object-cover aspect-square z-10 relative"
             />
