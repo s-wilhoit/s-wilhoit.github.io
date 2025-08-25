@@ -320,7 +320,6 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                           <h4 className="font-montserrat font-semibold">Two Cents Insights</h4>
                           <p className="text-gray-600 text-sm mb-1"><i>Jan – March 2024</i></p>
                           <ul className="list-disc pl-5 space-y-1 text-gray-600 text-sm">
-                            <li>Established operational foundations and workflow design for a small business providing research services and executive coaching.</li>
                             <li>Implemented a functional CRM to increase productivity and streamline business communications.</li>
                           </ul>
                         </div>
@@ -445,7 +444,7 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                         <div>
                           <h4 className="font-montserrat font-semibold mb-2">Cyber Threats — U.S. Cyber Command</h4>
                           <p className="text-gray-600 text-sm">
-                            Researched North Korean cyber recruitment strategies and talent pipelines; briefed at the NSA to inform intelligence and strategy leadership.
+                            Researched North Korean cyber recruitment strategies and talent pipelines; briefed at the National Security Agency (NSA) to inform intelligence and strategy leadership.
                           </p>
                         </div>
                       </div>

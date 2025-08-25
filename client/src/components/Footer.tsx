@@ -72,7 +72,9 @@ export default function Footer() {
           </p>
           <div className="flex space-x-6">
             <a
-              href="#"
+              href="https://www.linkedin.com/in/samantha-wilhoit/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-400 hover:text-harvard transition-colors"
               aria-label="LinkedIn"
             >
@@ -91,50 +93,6 @@ export default function Footer() {
                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
                 <rect width="4" height="12" x="2" y="9" />
                 <circle cx="4" cy="4" r="2" />
-              </svg>
-            </a>
-            <a
-              href="#"
-              className="text-gray-400 hover:text-harvard transition-colors"
-              aria-label="Twitter"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-twitter"
-              >
-                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
-              </svg>
-            </a>
-            <a
-              href="#"
-              className="text-gray-400 hover:text-harvard transition-colors"
-              aria-label="Medium"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-file-text"
-              >
-                <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
-                <polyline points="14 2 14 8 20 8" />
-                <line x1="16" x2="8" y1="13" y2="13" />
-                <line x1="16" x2="8" y1="17" y2="17" />
-                <line x1="10" x2="8" y1="9" y2="9" />
               </svg>
             </a>
           </div>
