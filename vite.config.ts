@@ -1,18 +1,20 @@
-// vite.config.ts
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
-const repo = "s-wilhoit.github.io"; // e.g. "my-app"
-
 export default defineConfig({
-  base: `/`, // If deploying to https://<USER>.github.io/<REPO>/
+  base: process.env.NODE_ENV === 'production' ? '/your-repo-name/' : '/',
   plugins: [
     react(),
     runtimeErrorOverlay(),
-    ...(process.env.NODE_ENV !== "production" && process.env.REPL_ID !== undefined
-      ? [await import("@replit/vite-plugin-cartographer").then((m) => m.cartographer())]
+    ...(process.env.NODE_ENV !== "production" &&
+    process.env.REPL_ID !== undefined
+      ? [
+          await import("@replit/vite-plugin-cartographer").then((m) =>
+            m.cartographer(),
+          ),
+        ]
       : []),
   ],
   resolve: {
@@ -24,7 +26,6 @@ export default defineConfig({
   },
   root: path.resolve(import.meta.dirname, "client"),
   build: {
-    // Option A: keep your current output
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
   },
