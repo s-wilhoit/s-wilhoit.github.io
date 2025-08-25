@@ -176,13 +176,12 @@ export default function Consulting() {
               variants={testimonialItem}
             >
               <p className="italic text-gray-700 mb-4">
-                "Working with you completely changed my perspective on the college application process. 
-                Instead of just chasing brand names, you helped me find schools where I could actually thrive."
+                "Working with Samantha transformed my essay writing entirely. Her guidance helped me find my voice and create a personal statement that I'm proud of.  I don't know what I would have done without her."
               </p>
               <div className="flex items-center">
                 <div>
-                  <h4 className="font-montserrat font-semibold">Sarah J.</h4>
-                  <p className="text-sm text-gray-600">Harvard '25</p>
+                  <h4 className="font-montserrat font-semibold">Kyle</h4>
+                  <p className="text-sm text-gray-600">Yale c/o 2025</p>
                 </div>
               </div>
             </motion.div>
@@ -192,13 +191,12 @@ export default function Consulting() {
               variants={testimonialItem}
             >
               <p className="italic text-gray-700 mb-4">
-                "Your guidance was invaluable. You helped me craft authentic essays that truly
-                represented who I am, not who I thought colleges wanted me to be."
+                "Samantha motivated me and made me feel like I could reach the sky if  wanted to. She inspired me to dream and because of that, I stand here today as an engineering student at the University of Southern California."
               </p>
               <div className="flex items-center">
                 <div>
-                  <h4 className="font-montserrat font-semibold">Michael R.</h4>
-                  <p className="text-sm text-gray-600">Stanford '24</p>
+                  <h4 className="font-montserrat font-semibold">Zoë</h4>
+                  <p className="text-sm text-gray-600">USC Viterbi c/o 2027</p>
                 </div>
               </div>
             </motion.div>
