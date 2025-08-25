@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { GraduationCap, BookOpen, Landmark, Rocket, Briefcase, FileText, UserCheck, Building, ArrowRight, Check, Globe2, Settings, Sprout } from "lucide-react";
+import { GraduationCap, BookOpen, Landmark, Rocket, Briefcase, FileText, UserCheck, Building, ArrowRight, Check, Globe2, Settings, Sprout, Shield, Home } from "lucide-react";
 
 interface EducationGovernmentProps {
   defaultView?: 'education' | 'government';
@@ -386,11 +386,11 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                     <div className="bg-policy bg-opacity-20 rounded-full w-8 h-8 flex items-center justify-center mr-3">
                       <div className="bg-policy rounded-full w-2 h-2"></div>
                     </div>
-                    <h3 className="font-playfair text-xl font-bold">Policy Analyst</h3>
+                    <h3 className="font-playfair text-xl font-bold">Government & Defense Research</h3>
                   </div>
                   
                   <div className="ml-11 mb-4">
-                    <p className="text-policy font-montserrat font-semibold text-sm">State Government • 2022-Present</p>
+                    <p className="text-policy font-montserrat font-semibold text-sm">Harvard Undergraduate Foreign Policy Initiative • 2023–2024</p>
                   </div>
                   
                   <motion.div 
@@ -407,12 +407,11 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                       transition={{ duration: 0.2 }}
                     >
                       <div className="flex items-start">
-                        <FileText className="h-5 w-5 text-policy mt-1 mr-3 flex-shrink-0" />
+                        <Landmark className="h-5 w-5 text-policy mt-1 mr-3 flex-shrink-0" />
                         <div>
-                          <h4 className="font-montserrat font-semibold mb-2">Education Policy Analysis</h4>
+                          <h4 className="font-montserrat font-semibold mb-2">Indigenous Rights — UNDRIP Implementation (WHCNAA)</h4>
                           <p className="text-gray-600 text-sm">
-                            Analyzed state education funding formulas and their impact on student outcomes across diverse districts. 
-                            Recommended policy changes that improved equity in resource allocation.
+                            Led comparative analysis of UNDRIP implementation across the U.S., Canada, Australia, and New Zealand for the White House Council on Native American Affairs; briefed findings at the U.S. Department of the Interior with recommendations to strengthen protections for Indigenous rights.
                           </p>
                         </div>
                       </div>
@@ -425,12 +424,11 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                       transition={{ duration: 0.2 }}
                     >
                       <div className="flex items-start">
-                        <UserCheck className="h-5 w-5 text-policy mt-1 mr-3 flex-shrink-0" />
+                        <Globe2 className="h-5 w-5 text-policy mt-1 mr-3 flex-shrink-0" />
                         <div>
-                          <h4 className="font-montserrat font-semibold mb-2">Legislative Research</h4>
+                          <h4 className="font-montserrat font-semibold mb-2">West Africa Security — AFRICOM</h4>
                           <p className="text-gray-600 text-sm">
-                            Conducted comprehensive research on proposed legislation, providing briefings to senior staff 
-                            and committee members on potential impacts and implementation challenges.
+                            Managed research on countering the expansion of violent extremist organizations in West Africa; synthesized open‑source and academic literature and presented findings to U.S. Africa Command leadership.
                           </p>
                         </div>
                       </div>
@@ -443,11 +441,11 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                       transition={{ duration: 0.2 }}
                     >
                       <div className="flex items-start">
-                        <Building className="h-5 w-5 text-policy mt-1 mr-3 flex-shrink-0" />
+                        <Shield className="h-5 w-5 text-policy mt-1 mr-3 flex-shrink-0" />
                         <div>
-                          <h4 className="font-montserrat font-semibold mb-2">Stakeholder Engagement</h4>
+                          <h4 className="font-montserrat font-semibold mb-2">Cyber Threats — U.S. Cyber Command</h4>
                           <p className="text-gray-600 text-sm">
-                            Coordinated with stakeholders to gather feedback and improve policy outcomes.
+                            Researched North Korean cyber recruitment strategies and talent pipelines; briefed at the NSA to inform intelligence and strategy leadership.
                           </p>
                         </div>
                       </div>
@@ -467,11 +465,11 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                     <div className="bg-policy bg-opacity-20 rounded-full w-8 h-8 flex items-center justify-center mr-3">
                       <div className="bg-policy rounded-full w-2 h-2"></div>
                     </div>
-                    <h3 className="font-playfair text-xl font-bold">Research Intern</h3>
+                    <h3 className="font-playfair text-xl font-bold">Nation Building II — Applied Policy Lab</h3>
                   </div>
                   
                   <div className="ml-11 mb-4">
-                    <p className="text-policy font-montserrat font-semibold text-sm">Policy Think Tank • 2019</p>
+                    <p className="text-policy font-montserrat font-semibold text-sm">Spring 2025 • Chickasaw Nation, Oklahoma</p>
                   </div>
                   
                   <motion.div 
@@ -488,12 +486,11 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                       transition={{ duration: 0.2 }}
                     >
                       <div className="flex items-start">
-                        <FileText className="h-5 w-5 text-policy mt-1 mr-3 flex-shrink-0" />
+                        <Home className="h-5 w-5 text-policy mt-1 mr-3 flex-shrink-0" />
                         <div>
-                          <h4 className="font-montserrat font-semibold mb-2">Healthcare Policy Research</h4>
+                          <h4 className="font-montserrat font-semibold mb-2">Housing Insecurity in the Chickasaw Nation (2025)</h4>
                           <p className="text-gray-600 text-sm">
-                            Researched the effectiveness of state-level healthcare initiatives, analyzing data trends 
-                            and conducting literature reviews to support policy recommendations.
+                            Co-authored an applied policy report for the Chickasaw Nation government on improving housing access and landlord engagement for tribal citizens; presented findings and recommendations to tribal leadership in Oklahoma.
                           </p>
                         </div>
                       </div>
@@ -508,10 +505,9 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                       <div className="flex items-start">
                         <UserCheck className="h-5 w-5 text-policy mt-1 mr-3 flex-shrink-0" />
                         <div>
-                          <h4 className="font-montserrat font-semibold mb-2">Data Analysis & Reporting</h4>
+                          <h4 className="font-montserrat font-semibold mb-2">Methods & Evidence</h4>
                           <p className="text-gray-600 text-sm">
-                            Compiled and analyzed demographic and economic data to identify trends affecting 
-                            policy outcomes in urban and rural communities.
+                            Conducted stakeholder interviews, analyzed housing market and affordability data, and synthesized program constraints to inform actionable recommendations.
                           </p>
                         </div>
                       </div>
@@ -524,12 +520,11 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                       transition={{ duration: 0.2 }}
                     >
                       <div className="flex items-start">
-                        <Building className="h-5 w-5 text-policy mt-1 mr-3 flex-shrink-0" />
+                        <FileText className="h-5 w-5 text-policy mt-1 mr-3 flex-shrink-0" />
                         <div>
-                          <h4 className="font-montserrat font-semibold mb-2">Policy Brief Writing</h4>
+                          <h4 className="font-montserrat font-semibold mb-2">Deliverables & Presentation</h4>
                           <p className="text-gray-600 text-sm">
-                            Authored policy briefs and white papers that informed legislative discussions 
-                            on critical social and economic issues.
+                            Produced a research report and executive presentation; delivered to Chickasaw Nation leadership with an implementation-focused roadmap.
                           </p>
                         </div>
                       </div>
