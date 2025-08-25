@@ -301,7 +301,6 @@ export default function Contact() {
                 Send Me a Message
               </h3>
               <div className="w-16 h-1 bg-harvard mx-auto mb-4"></div>
-              <p className="text-gray-600">I'd love to hear from you</p>
             </div>
 
             <div className="min-h-[600px]">

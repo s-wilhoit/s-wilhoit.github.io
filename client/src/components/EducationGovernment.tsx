@@ -172,13 +172,8 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                     <div className="bg-harvard bg-opacity-20 rounded-full w-8 h-8 flex items-center justify-center mr-3">
                       <div className="bg-harvard rounded-full w-2 h-2"></div>
                     </div>
-                    <h3 className="font-playfair text-xl font-bold">Harvard University</h3>
-                  </div>
-                  
-                  <div className="ml-11 mb-4">
-                    <p className="text-harvard font-montserrat font-semibold text-sm">Bachelor of Arts • 2018-2022</p>
-                  </div>
-                  
+                    <h3 className="font-playfair text-xl font-bold">Education</h3>
+                  </div> 
                   <motion.div 
                     className="ml-11 space-y-6"
                     variants={timelineContainer}
@@ -195,10 +190,16 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                       <div className="flex items-start">
                         <BookOpen className="h-5 w-5 text-harvard mt-1 mr-3 flex-shrink-0" />
                         <div>
-                          <h4 className="font-montserrat font-semibold mb-2">Government & Political Science</h4>
+                          <h4 className="font-montserrat font-semibold text-xl">Harvard College</h4>
+                          <p className="text-gray-600 text-sm  mb-2"><i>2020-2025</i></p>
                           <p className="text-gray-600 text-sm">
-                            Focused on public policy analysis, constitutional law, and democratic institutions. 
-                            Developed critical thinking skills essential for effective governance.
+                            <b>Overview:</b> Focused on public policy analysis, constitutional law, and democratic institutions. Developed critical thinking skills essential for effective governance.
+                          </p>
+                          <p className="text-gray-600 text-sm">
+                          <b>Relevant Coursework:</b> Governance in Native America, Designing and Implementing Randomized Control Trials for Public Policy, Making Change When Change is Hard
+                        </p>
+                          <p className="text-gray-600 text-sm">
+                          <b>Activities & Leadership:</b> Harvard Model Congress (Chief of Staff 2025), Natives at Harvard College (2020-present)
                           </p>
                         </div>
                       </div>
@@ -213,10 +214,13 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                       <div className="flex items-start">
                         <Award className="h-5 w-5 text-harvard mt-1 mr-3 flex-shrink-0" />
                         <div>
-                          <h4 className="font-montserrat font-semibold mb-2">Dean's List Recognition</h4>
+                          <h4 className="font-montserrat font-semibold text-xl">Harvard Kennedy School</h4>
+                          <p className="text-gray-600 text-sm  mb-2"><i>Spring 2025</i></p>
                           <p className="text-gray-600 text-sm">
-                            Consistently maintained high academic standards while engaging in extracurricular activities 
-                            and community service initiatives.
+                            <b>Coursework in:</b> Nation Building II
+
+                            <p className="text-gray-600 text-sm"><b>Research:</b> Co-authored Housing Insecurity in the Chickasaw Nation (2025), an applied policy report for the Chickasaw Nation government on improving housing access and landlord engagement for tribal citizens; conducted stakeholder interviews, analyzed housing market data, and developed actionable recommendations presented to tribal leadership.</p>
+
                           </p>
                         </div>
                       </div>
@@ -231,14 +235,33 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                       <div className="flex items-start">
                         <UserPlus className="h-5 w-5 text-harvard mt-1 mr-3 flex-shrink-0" />
                         <div>
-                          <h4 className="font-montserrat font-semibold mb-2">Leadership & Service</h4>
+                          <h4 className="font-montserrat font-semibold text-xl">MIT Sloan School of Management</h4>
+                          <p className="text-gray-600 text-sm  mb-2"><i>Fall 2024</i></p>
                           <p className="text-gray-600 text-sm">
-                            Led student organizations focused on civic engagement and educational equity. 
-                            Mentored underclassmen in academic and career development.
+                            <b>Coursework in:</b> Entrepreneurship
                           </p>
                         </div>
                       </div>
                     </motion.div>
+
+                    <motion.div
+                      className="relative bg-white p-6 rounded-xl shadow-md"
+                      variants={timelineItem}
+                      whileHover={{ y: -5 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <div className="flex items-start">
+                        <UserPlus className="h-5 w-5 text-harvard mt-1 mr-3 flex-shrink-0" />
+                        <div>
+                          <h4 className="font-montserrat font-semibold text-xl">London School of Economics</h4>
+                          <p className="text-gray-600 text-sm  mb-2"><i>Summer 2024</i></p>
+                          <p className="text-gray-600 text-sm">
+                            <b>Coursework in:</b> International Human Rights Law, Leadership, Happiness, and Policy
+                          </p>
+                        </div>
+                      </div>
+                    </motion.div>
+                    
                   </motion.div>
                 </motion.div>
                 
@@ -254,11 +277,7 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                     <div className="bg-harvard bg-opacity-20 rounded-full w-8 h-8 flex items-center justify-center mr-3">
                       <div className="bg-harvard rounded-full w-2 h-2"></div>
                     </div>
-                    <h3 className="font-playfair text-xl font-bold">Continued Learning</h3>
-                  </div>
-                  
-                  <div className="ml-11 mb-4">
-                    <p className="text-harvard font-montserrat font-semibold text-sm">Professional Development • Ongoing</p>
+                    <h3 className="font-playfair text-xl font-bold">Experience</h3>
                   </div>
                   
                   <motion.div 
@@ -277,7 +296,7 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                       <div className="flex items-start">
                         <FileText className="h-5 w-5 text-harvard mt-1 mr-3 flex-shrink-0" />
                         <div>
-                          <h4 className="font-montserrat font-semibold mb-2">Policy Research Certification</h4>
+                          <h4 className="font-montserrat font-semibold mb-2">Harvard Undergraduate Foreign Policy Initiative</h4>
                           <p className="text-gray-600 text-sm">
                             Advanced training in quantitative analysis, policy evaluation methodologies, 
                             and evidence-based decision making for public sector applications.
@@ -295,7 +314,7 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                       <div className="flex items-start">
                         <UserCheck className="h-5 w-5 text-harvard mt-1 mr-3 flex-shrink-0" />
                         <div>
-                          <h4 className="font-montserrat font-semibold mb-2">Educational Counseling Training</h4>
+                          <h4 className="font-montserrat font-semibold mb-2">Two Cents Insights</h4>
                           <p className="text-gray-600 text-sm">
                             Specialized coursework in college admissions processes, student development theory, 
                             and culturally responsive counseling practices.
@@ -313,7 +332,7 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                       <div className="flex items-start">
                         <Building className="h-5 w-5 text-harvard mt-1 mr-3 flex-shrink-0" />
                         <div>
-                          <h4 className="font-montserrat font-semibold mb-2">Public Administration Workshop</h4>
+                          <h4 className="font-montserrat font-semibold mb-2">Harvard Project for Asian and International Relations</h4>
                           <p className="text-gray-600 text-sm">
                             Intensive program covering budget analysis, stakeholder engagement, 
                             and implementation strategies for effective public service delivery.
