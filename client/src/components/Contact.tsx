@@ -1,56 +1,10 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Mail, MapPin, Clock, Send } from "lucide-react";
 import { useTypeform } from "@/lib/typeform";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useToast } from "@/hooks/use-toast";
-import { apiRequest } from "@/lib/queryClient";
-
-const formSchema = z.object({
-  name: z.string().min(2, { message: "Name must be at least 2 characters" }),
-  email: z.string().email({ message: "Invalid email address" }),
-  interest: z.string().min(1, { message: "Please select an interest" }),
-  message: z
-    .string()
-    .min(10, { message: "Message must be at least 10 characters" }),
-});
-
-type FormValues = z.infer<typeof formSchema>;
 
 export default function Contact() {
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const { toast } = useToast();
   const { showSidetab, hideSidetab } = useTypeform();
-
-  const form = useForm<FormValues>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      name: "",
-      email: "",
-      interest: "",
-      message: "",
-    },
-  });
 
   // Show Typeform sidetab when component mounts
   useEffect(() => {
@@ -68,44 +22,6 @@ export default function Contact() {
       hideSidetab();
     };
   }, [showSidetab, hideSidetab]);
-
-  const handleInterestChange = (value: string) => {
-    if (value === "policy") {
-      // Navigate to education section and set government tab active
-      window.location.hash = "#government";
-      // Scroll to the section
-      setTimeout(() => {
-        const section = document.getElementById("education");
-        if (section) {
-          section.scrollIntoView({ behavior: "smooth" });
-        }
-      }, 100);
-    }
-  };
-
-  const onSubmit = async (data: FormValues) => {
-    setIsSubmitting(true);
-    try {
-      await apiRequest("POST", "/api/contact", data);
-
-      toast({
-        title: "Message sent!",
-        description: "Thank you for your message. I'll get back to you soon.",
-        variant: "default",
-      });
-
-      form.reset();
-    } catch (error) {
-      toast({
-        title: "Error sending message",
-        description:
-          "There was an error sending your message. Please try again.",
-        variant: "destructive",
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
 
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
@@ -288,24 +204,31 @@ export default function Contact() {
             </div>
           </motion.div>
 
-          {/* Typeform embed */}
+          {/* Additional contact content */}
           <motion.div
-            className="bg-white/95 backdrop-blur-sm text-dark rounded-2xl shadow-2xl p-8 border border-gray-200/20 reveal opacity-0 translate-y-8"
+            className="reveal opacity-0 translate-y-8"
             variants={fadeIn}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
           >
-            <div className="text-center mb-8">
-              <h3 className="font-playfair text-3xl font-bold mb-2 text-harvard">
-                Send Me a Message
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-gray-200/20">
+              <h3 className="font-playfair text-2xl font-bold mb-4 text-center">
+                Ready to Connect?
               </h3>
-              <div className="w-16 h-1 bg-harvard mx-auto mb-4"></div>
-            </div>
-
-            <div className="min-h-[600px]">
-              <div data-tf-live="01JZM06RYCJFB5GGGX5VRZ532R"></div>
-              <script src="//embed.typeform.com/next/embed.js"></script>
+              <p className="text-gray-300 text-center mb-6">
+                I'm always open to meaningful conversations about policy, education, 
+                and helping others navigate their journey. Feel free to reach out 
+                through any of the channels above.
+              </p>
+              <div className="text-center">
+                <a 
+                  href="mailto:swilhoit@gmail.com"
+                  className="bg-harvard hover:bg-opacity-90 text-white font-montserrat font-semibold py-3 px-8 rounded-full inline-flex items-center justify-center transition-all"
+                >
+                  Send Email <Send className="ml-2 h-5 w-5" />
+                </a>
+              </div>
             </div>
           </motion.div>
         </div>
