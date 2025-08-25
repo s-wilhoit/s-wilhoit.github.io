@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { GraduationCap, BookOpen, Award, UserPlus, Briefcase, FileText, UserCheck, Building, ArrowRight, Check, Globe2, Settings, Sprout } from "lucide-react";
+import { GraduationCap, BookOpen, Landmark, Rocket, Briefcase, FileText, UserCheck, Building, ArrowRight, Check, Globe2, Settings, Sprout } from "lucide-react";
 
 interface EducationGovernmentProps {
   defaultView?: 'education' | 'government';
@@ -188,7 +188,7 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                       transition={{ duration: 0.2 }}
                     >
                       <div className="flex items-start">
-                        <BookOpen className="h-5 w-5 text-harvard mt-1 mr-3 flex-shrink-0" />
+                        <GraduationCap className="h-5 w-5 text-harvard mt-1 mr-3 flex-shrink-0" />
                         <div>
                           <h4 className="font-montserrat font-semibold text-xl">Harvard College</h4>
                           <p className="text-gray-600 text-sm  mb-2"><i>2020-2025</i></p>
@@ -212,7 +212,7 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                       transition={{ duration: 0.2 }}
                     >
                       <div className="flex items-start">
-                        <Award className="h-5 w-5 text-harvard mt-1 mr-3 flex-shrink-0" />
+                        <Landmark className="h-5 w-5 text-harvard mt-1 mr-3 flex-shrink-0" />
                         <div>
                           <h4 className="font-montserrat font-semibold text-xl">Harvard Kennedy School</h4>
                           <p className="text-gray-600 text-sm  mb-2"><i>Spring 2025</i></p>
@@ -233,7 +233,7 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                       transition={{ duration: 0.2 }}
                     >
                       <div className="flex items-start">
-                        <UserPlus className="h-5 w-5 text-harvard mt-1 mr-3 flex-shrink-0" />
+                        <Rocket className="h-5 w-5 text-harvard mt-1 mr-3 flex-shrink-0" />
                         <div>
                           <h4 className="font-montserrat font-semibold text-xl">MIT Sloan School of Management</h4>
                           <p className="text-gray-600 text-sm  mb-2"><i>Fall 2024</i></p>
@@ -251,7 +251,7 @@ export default function EducationGovernment({ defaultView = 'education' }: Educa
                       transition={{ duration: 0.2 }}
                     >
                       <div className="flex items-start">
-                        <UserPlus className="h-5 w-5 text-harvard mt-1 mr-3 flex-shrink-0" />
+                        <BookOpen className="h-5 w-5 text-harvard mt-1 mr-3 flex-shrink-0" />
                         <div>
                           <h4 className="font-montserrat font-semibold text-xl">London School of Economics</h4>
                           <p className="text-gray-600 text-sm  mb-2"><i>Summer 2024</i></p>
