@@ -39,24 +39,7 @@ export default function About() {
     }
   };
 
-  const imageGallery = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.15
-      }
-    }
-  };
-
-  const imageItem = {
-    hidden: { opacity: 0, scale: 0.9 },
-    visible: { 
-      opacity: 1, 
-      scale: 1,
-      transition: { duration: 0.5 }
-    }
-  };
+  
 
   return (
     <section id="about" className="py-20 min-h-screen flex items-center relative bg-gray-50 border-t border-gray-200">
@@ -104,39 +87,7 @@ export default function About() {
             </div>
           </motion.div>
           
-          {/* About image collage */}
-          <motion.div 
-            className="grid grid-cols-2 gap-4 reveal opacity-0 translate-y-8"
-            variants={imageGallery}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.1 }}
-          >
-            <motion.img 
-              src="https://pixabay.com/get/g51d7a9b682c72ae4b481928850d6bda8c4009286ac830b0d8b51e677501bcc062c8b29bd4255bab194bced7ff6a6c8b7ed59a9c8d67567359689245e53ac660e_1280.jpg" 
-              alt="Harvard University campus" 
-              className="rounded-lg shadow-lg w-full h-full object-cover"
-              variants={imageItem}
-            />
-            <motion.img 
-              src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=600&h=400" 
-              alt="Policy work setting" 
-              className="rounded-lg shadow-lg w-full h-full object-cover"
-              variants={imageItem}
-            />
-            <motion.img 
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&h=400" 
-              alt="College consulting session" 
-              className="rounded-lg shadow-lg w-full h-full object-cover"
-              variants={imageItem}
-            />
-            <motion.img 
-              src="https://pixabay.com/get/g287239c3e55cd3dbaf8046887fc7549289196ed2718e48d2d629de88d4360e9a4302cfdd5be9cffa33dd0652514aa9b7f168ceed39ea38d7ebb948d53eeb2cc7_1280.jpg" 
-              alt="Creative storytelling concept" 
-              className="rounded-lg shadow-lg w-full h-full object-cover"
-              variants={imageItem}
-            />
-          </motion.div>
+          {/* Removed image collage */}
         </div>
       </div>
     </section>
