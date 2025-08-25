@@ -180,13 +180,6 @@ export default function Consulting() {
                 Instead of just chasing brand names, you helped me find schools where I could actually thrive."
               </p>
               <div className="flex items-center">
-                <div className="w-10 h-10 bg-gray-300 rounded-full overflow-hidden mr-3">
-                  <img 
-                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&h=100" 
-                    alt="Student portrait" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
                 <div>
                   <h4 className="font-montserrat font-semibold">Sarah J.</h4>
                   <p className="text-sm text-gray-600">Harvard '25</p>
